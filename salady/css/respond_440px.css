@@ -1,0 +1,22 @@
+@media all and (max-width: 440px) {
+
+	/*header*/
+	.logo a {
+		width: 50px;
+		height: 45px;
+	}
+
+	/*insta*/
+	#insta .inner h3 {
+		font-size: 16px;
+	}
+
+	/*quick_menu*/
+	#quick_menu #pc_inquiry { /*'문의하기' pc용 안보이게*/
+		display: none;
+	}
+
+	#quick_menu #mo_inquiry { /*'문의하기' 모바일용 보이게*/
+		display: block;
+	}
+}

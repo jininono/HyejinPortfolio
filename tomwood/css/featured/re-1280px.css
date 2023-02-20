@@ -1,0 +1,118 @@
+@media all and (max-width: 1279px) {
+
+	html {
+		font-size: 9px;
+	}
+
+	.logo img {
+		width: 150px;
+		height: auto;
+	}
+
+	/*header*/
+	#gnb > li:nth-of-type(1) {
+		width: 81px;
+	}
+
+	#gnb > li:nth-of-type(2) {
+		width: 58px;
+		margin: 0 30px;
+	}
+
+	#gnb > li:nth-of-type(3) {
+		width: 86px;
+	}
+
+	#gnb > li:nth-of-type(4) {
+		width: 134px;
+		margin: 0 30px;
+	}
+
+	/*sub_menu*/
+	.sub_wrap {
+		position: absolute;
+		left: 0px;
+		top: 99px;
+		width: 100%; 
+		height: auto;
+		padding: 15px 0 50px 0;
+		z-index: 20;
+		background-color: #fff;
+	}
+
+	.submenu {
+		max-width: 89vw;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.submenu .img_box {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#account i {
+		font-size: 18px;
+	}
+
+	/*scroll*/
+	#scroll {
+		position: fixed;
+		top: 55%;
+		right: 40px;
+		transform: translateY(-50%);
+		z-index: 99;
+	}
+
+	#scroll span {
+	  position: absolute;
+	  top: 0;
+	  left: 50%;
+	  width: 28px;
+	  height: 48px;
+	  margin-left: -15px;
+	  border: 2px solid #fff;
+	  border-radius: 50px;
+	  box-sizing: border-box;
+	}
+
+	#scroll span::before {
+	  position: absolute;
+	  top: 10px;
+	  left: 53%;
+	  content: '';
+	  width: 5px;
+	  height: 5px;
+	  margin-left: -3px;
+	  background-color: #fff;
+	  border-radius: 100%;
+	  -webkit-animation: sdb 2s infinite;
+	  animation: sdb 2s infinite;
+	  box-sizing: border-box;
+	}
+
+	main {
+		padding-top: 99px;
+	}
+
+	/*footer*/
+	footer .left_wrap .logo_icon img {
+		width: 3.5vw;
+		height: auto;
+	}
+
+	.right_wrap .login_box .sign_up {
+		padding-left: 7vw;
+	}
+
+	.right_wrap_inner #company_box {
+		margin: 0 6vw;
+	}
+
+}

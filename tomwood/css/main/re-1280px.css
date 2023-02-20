@@ -1,0 +1,247 @@
+@media all and (max-width: 1279px) {
+
+	html {
+		font-size: 9px;
+	}
+
+	.inner {
+		max-width: 89vw;
+		margin: 0 auto;
+	}
+
+	.logo img {
+		width: 150px;
+		height: auto;
+		filter: invert(100%);
+	}
+
+	/*header*/
+	#gnb > li:nth-of-type(1) {
+		width: 81px;
+	}
+
+	#gnb > li:nth-of-type(2) {
+		width: 58px;
+		margin: 0 30px;
+	}
+
+	#gnb > li:nth-of-type(3) {
+		width: 86px;
+	}
+
+	#gnb > li:nth-of-type(4) {
+		width: 134px;
+		margin: 0 30px;
+	}
+
+	/*sub_menu*/
+	.sub_wrap {
+		position: absolute;
+		left: 0px;
+		top: 99px;
+		width: 100%; 
+		height: auto;
+		padding: 15px 0 50px 0;
+		z-index: 20;
+		background-color: #fff;
+	}
+
+	.submenu {
+		max-width: 89vw;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.submenu .img_box {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#account i {
+		font-size: 18px;
+		color: #fff;
+	}
+	
+	/*sect01*/
+	#sect01 {
+		margin: 150px 0;
+	}
+
+	#sect01 .text {
+		font-size: 2.6rem;
+		font-family: 'Frank Ruhl Libre', serif;
+		font-weight: 300;
+		width: 670px;
+		height: auto;
+		margin: 75px auto;
+		line-height: 1.5;
+	}
+
+	#sect01 .more_box {
+		display: inline-block;
+		padding: 20px 50px;
+		border: 1px solid #111;
+		transition: all .5s;
+	}
+
+	/*sect02*/
+	#sect02 {
+		margin-bottom: 150px;
+	}
+
+	#sect02 .inner {
+		text-align: center;
+	}
+
+	#sect02 .title {
+		margin-bottom: 75px;
+	}
+
+	#sect02 .content_wrap {
+		max-width: 89vw;
+		margin: 0 auto;
+		transition: all 1s;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	#sect02 .img_box1 {
+		width: 25vw;
+		height: auto;
+	}
+
+	#sect02 .img_box2 {
+		width: 43.3vw;
+		height: auto;
+	}
+
+	#sect02 .img_box3 {
+		width: 34vw;
+		height: auto;
+	}
+
+	/*sect03*/
+	#sect03 {
+		margin-bottom: 200px;
+	}
+
+	#sect03 .text2 {
+		display: inline-block;
+		width: 280px;
+		height: auto;
+		margin-top: 20px;
+	}
+
+	#sect03 .img_box {
+		width: 33vw;
+		height: auto;
+	}
+
+	#sect03 .more_box {
+		position: absolute;
+		right: 0;
+		bottom: 8vw;
+		display: inline-block;
+		padding: 15px 50px;
+		border: 1px solid #111;
+		transition: all .5s;
+	}
+
+	/*sect04*/
+	#sect04 {
+		width: 100%;
+		height: 1455px;
+		background: #a5aeac;
+	}
+
+	#sect04 .inner {
+		position: relative;
+	}
+
+	#sect04 .title2 {
+		position: absolute;
+		left: 0;
+		top: 70px;
+	}
+
+	#sect04 .text2 {
+		width: 280px;
+		position: absolute;
+		left: 250px;
+		top: 80px;
+	}
+
+	#sect04 .more_box {
+		position: absolute;
+		left: 250px;
+		top: 200px;
+		display: inline-block;
+		padding: 15px 50px;
+		border: 1px solid #111;
+		transition: all .5s;
+	}
+
+	#sect04 .content_top {
+		position: absolute;
+		right: 0;
+		top: 290px;
+		transition: all 1s;
+	}
+
+	#sect04 .content_left {
+		position: absolute;
+		left: 0;
+		top: 820px;
+	}
+
+	#sect04 .content_right {
+		position: absolute;
+		right: 0;
+		top: 820px;
+	}
+
+	#sect04 .content_top .img_box {
+		width: 50vw;
+		height: auto;
+	}
+
+	#sect04 .content_left .img_box {
+		width: 33.3vw;
+		height: auto;
+	}
+
+	#sect04 .content_right .img_box {
+		width: 45.8vw;
+		height: auto;
+	}
+
+	/*sect05*/
+	#sect05 .more_box {
+		display: inline-block;
+		padding: 20px 50px;
+		border: 1px solid #fff;
+		color: #fff;
+		transition: all .5s;
+	}
+
+	/*footer*/
+	footer .left_wrap .logo_icon img {
+		width: 3.5vw;
+		height: auto;
+	}
+
+	.right_wrap .login_box .sign_up {
+		padding-left: 7vw;
+	}
+
+	.right_wrap_inner #company_box {
+		margin: 0 6vw;
+	}
+}

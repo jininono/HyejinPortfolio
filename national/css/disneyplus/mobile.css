@@ -1,0 +1,283 @@
+@media all and (max-width: 767px) {
+
+	html {
+		font-size: 7px;
+	}
+
+	/*header*/
+	header .logo img {
+		width: 90px;
+		padding: 15px 0 10px 0;
+	}
+
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		right: 0;
+		top: 28px;
+	}
+
+	/*sideba*/
+	input[id="line"] + label {
+	    display: block;
+	    width: 17px;
+	    cursor:pointer;
+	}
+
+	input[id="line"] + label > span {
+	    display: block;
+	    height: 2px;
+	    width: 100%;
+	    background-color: #ffdb00;
+	}
+
+	input[id="line"] + label > span:nth-child(1) {
+	    top:0;
+	    transform:translateY(-8px);
+	}
+
+	input[id="line"] + label > span:nth-child(2) {
+	    top:0;
+	    transform:translateY(-4px);
+	}
+
+	input[id="line"] + label > span:nth-child(3) {
+	    bottom:0;
+	    transform:translateX(7px);
+	    width: 10px;
+	}
+
+	.sidebar_inner {
+		position: relative;
+		max-width: 89vw;
+		margin: 0 auto;
+	}
+
+	.sidebar_inner .logo img {
+		width: 90px;
+		position: absolute;
+		left: 0;
+		top: 15px;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 18px;
+		right: 0px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+	}
+
+	.sidebar_inner .close:before, .close:after {
+		  position: absolute;
+		  left: 5px;
+		  content: ' ';
+		  height: 20px;
+		  width: 2px;
+		  background-color: #ffdb00;
+	}
+
+	.sidebar_inner .close:before {
+		  transform: rotate(45deg);
+	}
+
+	.sidebar_inner .close:after {
+		  transform: rotate(-45deg);
+	}
+
+	.sidebar_inner #sidebar_gnb {
+		position: absolute;
+		top: 80px;
+		right: 0px;
+	}
+
+	#sidebar_gnb > li > a {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 15px;
+		text-align: right;
+		line-height: 2;
+		color: #fff;
+		font-weight: 500;
+	}
+
+	/*main_top*/
+	#main_top {
+		width: 100%;
+		height: 45vh;
+		margin-bottom: 56px;/*header값줘서 겹친 만큼 margin으로 밀어내기*/
+	}
+
+	#main_top_wrap {
+		width: 100%;
+		height: 45vh;
+		position: fixed;
+		left: 0;
+		top: 56px; /*header 높이 값*/
+		background-color: #111;
+	}
+
+	#main_top_inner {
+		width: 89vw;
+		margin: 0 auto;
+	}
+
+	#main_top_inner video {
+		width: 89vw;
+		height: 45vh;
+		object-fit: cover;
+	}
+
+	 #box_wrap #most {
+	 	font-size: 1.4rem;
+	 	position: relative;
+	 	padding: 15px 35px 15px 25px;
+	 	background-color: #111;
+	 	color: #fff;
+	 	border: 1px solid #fff;
+	 }
+
+	  #most::after {
+		position: absolute;
+	    right: 20px;
+	    top: 18px;
+	    content: "";
+	    display: block;
+	    width: 0px;
+	    border-left: 4px solid transparent;
+	    border-top: 6px solid #fff;
+	    border-right: 4px solid transparent
+	}
+
+	.box_menu {
+	 	display: none;
+	 	position: absolute;
+	 	top: 28px;
+	    background-color: #111;
+	    border: 1px solid #fff;
+	    border-top: none;
+	    z-index: 1;
+	}
+
+	.box_menu li {
+	 	padding: 15px 43.1px;
+	}
+
+	/*section*/
+	#sect_wrap > div {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-bottom: 50px;
+	} 
+
+	#sect_wrap .img_box {
+		width: 80vw;
+		height: auto;
+	}
+
+	#sect_wrap .img_box img {
+		width: 100%;
+	}
+	 
+	#sect_wrap .text_wrap {
+		width: 80vw;
+		height: auto;
+		padding-left: 0;
+		margin-top: 50px;
+		color: #fff;
+	}
+
+	#sect_wrap .section_title {
+		font-family: 'Roboto', sans-serif;
+		display: inline-block;
+		font-size: calc(1.02vw + 10.18px);
+		border-bottom: 3px solid #ffdb00;
+		padding-bottom: 3px;
+	}
+
+	#sect_wrap .title {
+		font-size: calc(1.02vw + 20.18px);
+		font-weight: 400;
+		padding: 10px 0 5px 0;
+	}
+
+	#sect_wrap .txt {
+		font-size: calc(1.02vw + 10.18px);
+		font-weight: 300;
+	}
+
+	#sect_wrap .more {
+		display: inline-block;
+		text-align: center;
+		padding: 10px 25px;
+		background-color: #ffdb00;
+		font-size: calc(1.02vw + 10.18px);
+		margin-top: 25px;
+		transition: all 1s;
+		position: relative;
+		left: 0;
+	}
+
+	/*footer*/
+	footer .top_wrap {
+		width: 100%;
+		height: 185px;
+		border-bottom: 1px solid #555;
+	}
+
+	footer .left_wrap {
+		float: left;
+		padding-top: 30px;
+	}
+
+	footer .right_wrap li {
+		font-size: 1.4rem;
+	}
+
+	footer .left_wrap .logo_icon img {
+		width: 80px;
+	}
+
+	footer .left_wrap .social_wrap img {
+		width: 15px;
+		height: auto;
+		margin: 10px 7px 0 0;
+	}
+
+	footer .right_wrap {
+		float: right;
+		padding-top: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer .right_wrap .menu_wrap {
+		margin-right: 20px;
+	}
+
+	footer .right_wrap .menu_wrap li:hover a {
+		color: #ffdb00;
+	}
+
+	footer .right_wrap .contact_wrap .title {
+		margin-right: 15px;
+	}
+
+	footer .right_wrap .contact_wrap .num {
+		padding-top: 17.5px;
+	}
+
+	footer .bottom_wrap {
+		padding: 15px 0;
+		font-size: 1.4rem;
+	}
+
+	footer .bottom_wrap a {
+		display: inline-block;
+		margin-right: 5px;
+		padding-bottom: 7px;
+	}
+
+}

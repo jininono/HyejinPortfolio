@@ -1,0 +1,61 @@
+@media all and (max-width: 800px) {
+
+	.inner {
+		width: auto !important; /*반응형 width 제정렬*/
+	}
+
+	header {
+		height: 65px;
+	}
+
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+	}
+
+	/*slide*/
+	.mo_slide_group {
+		display: block !important;
+	}
+
+	.mo_slide_group .mo_slide img {
+		width: 100%;
+		height: 100%; /*#visual_slide의 height값에 맞춰서 100%*/
+	}
+
+	.pc_slide_group {
+		display: none !important;
+	}
+
+	/*insta*/
+	.insta_box {
+		margin: 30px 10px 0 10px;
+	}
+
+	.insta_box li {
+		float: left;
+		width: 50%;
+	}
+
+	/*footer*/
+	.policy_list {
+		font-size: 0.7rem;
+	}
+
+	.policy_list li a {
+		padding: 0 5px;
+	}
+
+	address {
+		padding-top: 10px;
+		font-size: 0.5rem;
+	}
+
+	address span {
+		padding: 0 5px;
+		padding-bottom: 5px;
+	}
+
+}

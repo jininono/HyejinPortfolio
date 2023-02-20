@@ -1,0 +1,66 @@
+@media all and (max-width: 1279px) {
+
+	html {
+		font-size: 9px;
+	}
+	
+	/*header*/
+	header .logo img {
+		width: 120px;
+		padding: 25px 0 20px 0;
+	}
+
+	.sidebar_inner .logo img {
+		width: 120px;
+	}
+
+	/*search*/
+	.search_inner {
+		position: absolute;
+		left: 0;
+		top: 28px;
+	}
+
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		right: 0;
+		top: 40px;
+	}
+
+	.sidebar_inner #sidebar_gnb {
+		position: absolute;
+		top: 110px;
+		right: 0px;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 30px;
+		right: 5px;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+
+	/*main*/
+	main {
+		width: 100%;
+		height: auto;
+		margin-top: 186px;/*86px은 헤더 값*/
+	}
+
+	#sect05 i {
+		font-size: 35px;
+	}
+
+	/*footer*/
+	footer .left_wrap .logo_icon img {
+		width: 120px;
+	}
+
+	footer .right_wrap .contact_wrap .num {
+		padding-top: 25px;
+	}
+
+}

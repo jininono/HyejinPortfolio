@@ -1,0 +1,32 @@
+@media all and (max-width: 1439px) {
+
+	.inner {
+		max-width: 89vw;
+		margin: 0 auto;
+	}
+
+	/*section*/
+	section .img_box {
+		width: 20vw;
+		height: auto;
+	}
+
+	section .text_wrap {
+		margin: 7.14% 0 17.9% 0;
+	}
+
+	#sect01 .left_wrap .img_box1 {
+		width: 44vw;
+		height: auto;
+	}
+	
+	#sect02 .right_wrap .img_box1 {
+		width: 44vw;
+		height: auto;
+	}
+
+	#sect03 .img_box1 {
+		width: 43vw;
+		height: auto;
+	}
+}

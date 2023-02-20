@@ -1,0 +1,248 @@
+@media all and (max-width: 767px) {
+
+	html {
+		font-size: 7px;
+	}
+
+	/*header*/
+	header .logo img {
+		width: 90px;
+		padding: 15px 0 10px 0;
+	}
+
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		right: 0;
+		top: 28px;
+	}
+
+	/*sideba*/
+	input[id="line"] + label {
+	    display: block;
+	    width: 17px;
+	    cursor:pointer;
+	}
+
+	input[id="line"] + label > span {
+	    display: block;
+	    height: 2px;
+	    width: 100%;
+	    background-color: #ffdb00;
+	}
+
+	input[id="line"] + label > span:nth-child(1) {
+	    top:0;
+	    transform:translateY(-8px);
+	}
+
+	input[id="line"] + label > span:nth-child(2) {
+	    top:0;
+	    transform:translateY(-4px);
+	}
+
+	input[id="line"] + label > span:nth-child(3) {
+	    bottom:0;
+	    transform:translateX(7px);
+	    width: 10px;
+	}
+
+	.sidebar_inner {
+		position: relative;
+		max-width: 89vw;
+		margin: 0 auto;
+	}
+
+	.sidebar_inner .logo img {
+		width: 90px;
+		position: absolute;
+		left: 0;
+		top: 15px;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 18px;
+		right: 0px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+	}
+
+	.sidebar_inner .close:before, .close:after {
+		  position: absolute;
+		  left: 5px;
+		  content: ' ';
+		  height: 20px;
+		  width: 2px;
+		  background-color: #ffdb00;
+	}
+
+	.sidebar_inner .close:before {
+		  transform: rotate(45deg);
+	}
+
+	.sidebar_inner .close:after {
+		  transform: rotate(-45deg);
+	}
+
+	.sidebar_inner #sidebar_gnb {
+		position: absolute;
+		top: 80px;
+		right: 0px;
+	}
+
+	#sidebar_gnb > li > a {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 15px;
+		text-align: right;
+		line-height: 2;
+		color: #fff;
+		font-weight: 500;
+	}
+
+	/*main*/
+	main {
+		margin-top: 106px;/*header 값 빼면 마진값은 50px*/
+	}
+
+	main .inner {
+		text-align: center;
+	}
+
+	main .inner .title {
+		position: relative;
+		display: inline-block;
+		font-size: calc(4.07vw + 14.73px);
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		margin-bottom: 50px;
+		margin-left: 10px;
+	}
+
+	section {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0px;
+	}
+
+	section .content_box {
+		display: none;
+	}
+
+	.text_wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		padding: 8%;
+	}
+
+	.text_wrap .keywood {
+		display: inline-block;
+		text-align: center;
+		padding: 10px 20px;
+		background-color: #ffdb00;
+		font-size: calc(1.53vw + 6.27px);
+		font-weight: 500;
+		color: #1f1f1f;
+		margin-bottom: 30px;
+		transition: all 1s;
+	}
+
+	.text_wrap .title {
+		font-family: 'Roboto', sans-serif;
+		font-size: calc(3.05vw + 16.55px);
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+
+	.text_wrap .txt {
+		font-weight: 400;
+		font-size: calc(1.53vw + 6.27px);
+		line-height: 1.5;
+		letter-spacing: .5px;
+	}
+
+	section .mo-view {
+		display: inline-block;
+		font-size: calc(1.53vw + 6.27px);
+		font-weight: 500;
+		padding-top: 30px;
+		text-decoration: underline;
+		text-underline-position: under;
+	}
+
+	#sect02 .mo-view,
+	#sect04 .mo-view {
+		color: #fff;
+	}
+
+	#main_bottom p {
+		font-size: calc(1.02vw + 10.18px);
+	}
+
+	/*footer*/
+	footer .top_wrap {
+		width: 100%;
+		height: 185px;
+		border-bottom: 1px solid #555;
+	}
+
+	footer .left_wrap {
+		float: left;
+		padding-top: 30px;
+	}
+
+	footer .right_wrap li {
+		font-size: 1.4rem;
+	}
+
+	footer .left_wrap .logo_icon img {
+		width: 80px;
+	}
+
+	footer .left_wrap .social_wrap img {
+		width: 15px;
+		height: auto;
+		margin: 10px 7px 0 0;
+	}
+
+	footer .right_wrap {
+		float: right;
+		padding-top: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer .right_wrap .menu_wrap {
+		margin-right: 20px;
+	}
+
+	footer .right_wrap .menu_wrap li:hover a {
+		color: #ffdb00;
+	}
+
+	footer .right_wrap .contact_wrap .title {
+		margin-right: 15px;
+	}
+
+	footer .right_wrap .contact_wrap .num {
+		padding-top: 17.5px;
+	}
+
+	footer .bottom_wrap {
+		padding: 15px 0;
+		font-size: 1.4rem;
+	}
+
+	footer .bottom_wrap a {
+		display: inline-block;
+		margin-right: 5px;
+		padding-bottom: 7px;
+	}
+}

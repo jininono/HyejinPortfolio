@@ -1,0 +1,173 @@
+@media all and (max-width: 1200px) {
+
+	.inner {
+		width: auto !important; /*반응형 width 제정렬*/
+	}
+
+	header {
+		height: 75px;
+		box-shadow: 0 1px 1px rgb(0, 0, 0, 10%);
+		position: sticky;
+		top: 0px;
+		z-index: 10;
+	}
+
+	.logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.logo a {
+		width: 55px;
+		height: 50px;
+	}
+
+	#gnb {
+		display: none;
+	}
+
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		right: 50px;
+		top: 35px;
+	}
+
+	input[id="line"] + label {
+	    display: block;
+	    width: 30px;
+	    height: 10px;
+	    cursor:pointer;
+	}
+
+	/*하단 footer 고정*/
+	#content_wrapper {
+		overflow: hidden;
+		height: auto;
+	}
+
+	#sidebar {
+		position: fixed;
+		right: -70vw;
+    	width: 70vw;
+		height: 100%;
+		overflow-y: auto;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		width: 30px;
+		height: 30px;
+		background: url(../img/close.png) no-repeat center center;
+	    background-size: 20px auto;
+	    cursor: pointer;
+	}
+
+	.sidebar_inner #sidebar_gnb {
+		position: absolute;
+		top: 70px;
+		left: 30px;
+	}
+
+	#sidebar_gnb > li > a {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 30px;
+		font-size: 16px;
+		color: #222;
+		font-weight: 600;
+		letter-spacing: -1px;
+	}
+
+	.gnb_submenu {
+		padding-bottom: 30px;
+	}
+
+	.gnb_submenu > li > a {
+		display: inline-block;
+		font-size: 14px;
+		color: #555;
+		padding: 5px 10px;
+	}
+
+	.sns_app, p { /*반응형에서만 보이게*/
+		display: block;
+	}
+
+	.sns_app {
+		position: absolute;
+		left: 30px;
+		top: 600px;
+	}
+
+	.sns_app ul {
+		padding-bottom: 50px;
+	}
+
+	.sns_app ul li {
+		float: left;
+		padding-right: 15px;
+	}
+
+	.sns_app ul li img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.sidebar_inner p {
+		color: #555;
+		font-size: 12px;
+	}
+
+	/*quick_menu*/
+	#quick_menu .pc { /*pc용 안보이게('문의하기'는 그대로)*/
+		display: none;
+	}
+
+	#quick_menu .mobile { /*오른쪽 정렬과 보여지기 위해서 inline-block으로 주기*/
+		display: inline-block;
+	}
+
+	#quick_menu ul li { /*mobile 이미지 오른쪽 정렬*/
+		text-align: right;
+	}
+
+	#quick_menu img {
+		width: 70px;
+	}
+
+	#quick_menu #pc_inquiry { /*'문의하기' 이미지 크기*/
+		width: 170px;
+	}
+
+	/*insta*/
+	#insta {
+		margin: 50px auto;
+	}
+
+	#insta .inner {
+		height: 100%;
+	}
+
+	#insta .inner h3 {
+		font-size: 18px;
+	}
+
+	/*footer*/
+	footer {
+		margin-top: 50px;
+	}
+
+	.policy_list {
+		padding-top: 30px;
+		font-size: 12px;
+	}
+
+	address {
+		padding: 20px 0;
+		font-size: 12px;
+	}

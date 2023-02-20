@@ -1,0 +1,122 @@
+@media all and (max-width: 1279px) {
+
+	html {
+		font-size: 9px;
+	}
+	
+	/*header*/
+	header .logo img {
+		width: 120px;
+		padding: 25px 0 20px 0;
+	}
+
+	.sidebar_inner .logo img {
+		width: 120px;
+	}
+
+	/*search*/
+	.search_inner {
+		position: absolute;
+		left: 0;
+		top: 28px;
+	}
+
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		right: 0;
+		top: 40px;
+	}
+
+	.sidebar_inner #sidebar_gnb {
+		position: absolute;
+		top: 110px;
+		right: 0px;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 30px;
+		right: 5px;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+
+	/*main*/
+	main {
+		width: 100%;
+		height: auto;
+		margin-top: 186px;/*86px은 헤더 값*/
+	}
+
+	/*sect01*/
+	#sect01 .inner {
+		display: flex;
+		justify-content: center;
+	}
+
+	#sect01 .title {
+		margin-left: 10px;
+	}
+
+	#sect01 .left_wrap {
+		margin-right: 80px;
+	}
+
+	#sect01 .left_wrap .content_wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#sect01 .left_wrap .img_box {
+		width: 28vw;
+		height: auto;
+	}
+
+	#sect01 .left_wrap .text_wrap {
+		width: 14vw;
+		height: auto;
+		background-color: #ffdb00;
+		padding: 40px 20px;
+		position: relative;
+		transition: all .3s;
+		cursor: pointer;
+	}
+
+	#sect01 .text_wrap .name {
+		font-weight: 600;
+		padding-bottom: 20px;
+	}
+
+	#sect01 .text_wrap .txt {
+		font-weight: 500;
+		line-height: 1.9;
+	}
+
+	#sect01 .text_wrap .txt2 {
+		line-height: 1.9;
+		background-color: #000;
+		color: #fff; 
+		position: absolute;
+		padding: 0 20px 10px;
+		right: 0px;
+		bottom: 0px;
+		transition: all .3s;
+	}
+
+	#sect03 i {
+		font-size: 35px;
+		color: #ffdb00;
+	}
+
+	/*footer*/
+	footer .left_wrap .logo_icon img {
+		width: 120px;
+	}
+
+	footer .right_wrap .contact_wrap .num {
+		padding-top: 25px;
+	}
+
+}

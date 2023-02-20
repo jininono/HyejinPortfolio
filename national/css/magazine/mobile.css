@@ -1,0 +1,272 @@
+@media all and (max-width: 600px) {
+
+	html {
+		font-size: 7px;
+	}
+
+	/*header*/
+	header .logo img {
+		width: 90px;
+		padding: 15px 0 10px 0;
+	}
+
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		right: 0;
+		top: 28px;
+	}
+
+	/*sideba*/
+	input[id="line"] + label {
+	    display: block;
+	    width: 17px;
+	    cursor:pointer;
+	}
+
+	input[id="line"] + label > span {
+	    display: block;
+	    height: 2px;
+	    width: 100%;
+	    background-color: #ffdb00;
+	}
+
+	input[id="line"] + label > span:nth-child(1) {
+	    top:0;
+	    transform:translateY(-8px);
+	}
+
+	input[id="line"] + label > span:nth-child(2) {
+	    top:0;
+	    transform:translateY(-4px);
+	}
+
+	input[id="line"] + label > span:nth-child(3) {
+	    bottom:0;
+	    transform:translateX(7px);
+	    width: 10px;
+	}
+
+	.sidebar_inner {
+		position: relative;
+		max-width: 89vw;
+		margin: 0 auto;
+	}
+
+	.sidebar_inner .logo img {
+		width: 90px;
+		position: absolute;
+		left: 0;
+		top: 15px;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 18px;
+		right: 0px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+	}
+
+	.sidebar_inner .close:before, .close:after {
+		  position: absolute;
+		  left: 5px;
+		  content: ' ';
+		  height: 20px;
+		  width: 2px;
+		  background-color: #ffdb00;
+	}
+
+	.sidebar_inner .close:before {
+		  transform: rotate(45deg);
+	}
+
+	.sidebar_inner .close:after {
+		  transform: rotate(-45deg);
+	}
+
+	.sidebar_inner #sidebar_gnb {
+		position: absolute;
+		top: 80px;
+		right: 0px;
+	}
+
+	#sidebar_gnb > li > a {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 15px;
+		text-align: right;
+		line-height: 2;
+		color: #fff;
+		font-weight: 500;
+	}
+
+	/*main*/
+	main {
+		width: 100%;
+		height: auto;
+		margin-top: 106px;/*56px은 헤더 값*/
+	}
+
+	main > .inner > .title {
+		margin: 0 auto;
+		font-family: 'Roboto', sans-serif;
+		font-size: calc(1.90vw + 12.86px);
+		font-weight: 500;
+		border-bottom: 4px solid #ffdb00;
+		padding-bottom: 7px;
+	}
+
+	section {
+		margin-top: 50px;
+	}
+
+	section .title {
+		position: relative;
+		display: inline-block;
+		font-size: calc(1.52vw + 12.29px);
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		margin-bottom: 50px;
+	}
+
+	#sect01 .left_wrap .text_wrap {
+		width: 29vw;
+		height: auto;
+		background-color: #ffdb00;
+		padding: 40px 20px;
+		position: relative;
+		transition: all .3s;
+		cursor: pointer;
+	}
+
+	#sect01 .text_wrap .name {
+		font-size: calc(1.52vw + 8.29px);
+		font-weight: 600;
+		padding-bottom: 20px;
+	}
+
+	#sect01 .text_wrap .txt2 {
+		display: none;
+	}
+
+	#sect01 .right_wrap {
+		margin-top: 50px;
+	}
+
+	#sect01 .right_wrap .content_wrap .img_box:nth-of-type(1),
+	#sect01 .right_wrap .content_wrap .img_box:nth-of-type(2) {
+		margin-bottom: 30px;
+	}
+
+	#sect02 {
+		width: 100%;
+		height: auto;
+		background-color: #eee;
+		padding: 30px 0;
+	}
+
+	#sect02 .content_wrap .content_box:nth-of-type(1), .img_box:nth-of-type(2) {
+		margin-bottom: 30px;
+	}
+
+	#sect02 .text_wrap {
+		background-color: #fff;
+		padding: 30px 0px 30px 15px;
+		transition: all .3s;
+	}
+
+	#sect02 .text_wrap .name {
+		font-size: calc(1.52vw + 8.29px);
+		font-weight: 600;
+		padding-bottom: 20px;
+	}
+
+	#sect03 .title {
+		margin-bottom: 50px;
+	}
+
+	#sect03 .inner {
+		margin-bottom: 50px;
+	}
+
+	#sect03 .month {
+		margin-top: 25px;
+	}
+
+	#sect03 #prev {
+		position: absolute;
+		left: 0;
+		top: 35%;
+		z-index: 10;
+	}
+
+	#sect03 #next {
+		position: absolute;
+		right: 0;
+		top: 35%;
+		z-index: 10;
+	}
+
+	/*footer*/
+	footer .top_wrap {
+		width: 100%;
+		height: 185px;
+		border-bottom: 1px solid #555;
+	}
+
+	footer .left_wrap {
+		float: left;
+		padding-top: 30px;
+	}
+
+	footer .right_wrap li {
+		font-size: 1.4rem;
+	}
+
+	footer .left_wrap .logo_icon img {
+		width: 80px;
+	}
+
+	footer .left_wrap .social_wrap img {
+		width: 15px;
+		height: auto;
+		margin: 10px 7px 0 0;
+	}
+
+	footer .right_wrap {
+		float: right;
+		padding-top: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer .right_wrap .menu_wrap {
+		margin-right: 20px;
+	}
+
+	footer .right_wrap .menu_wrap li:hover a {
+		color: #ffdb00;
+	}
+
+	footer .right_wrap .contact_wrap .title {
+		margin-right: 15px;
+	}
+
+	footer .right_wrap .contact_wrap .num {
+		padding-top: 17.5px;
+	}
+
+	footer .bottom_wrap {
+		padding: 15px 0;
+		font-size: 1.4rem;
+	}
+
+	footer .bottom_wrap a {
+		display: inline-block;
+		margin-right: 5px;
+		padding-bottom: 7px;
+	}
+
+}

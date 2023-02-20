@@ -1,0 +1,325 @@
+@charset 'UTF-8';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: 10px;
+}
+
+body {
+	overflow-x: hidden;
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none;
+}
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #111;
+}
+
+.inner {
+	max-width: 89vw;
+	margin: 0 auto;
+}
+
+/*header*/
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	z-index: 30;
+	background: #fff;
+}
+
+header .inner {
+	max-width: 89vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo img {
+	width: 180px;
+	height: auto;
+}
+
+.mo_search {
+	display: none;
+}
+
+#gnb > li {
+	float: left;
+}
+
+#gnb > li:nth-of-type(1) {
+	width: 100px;
+}
+
+#gnb > li:nth-of-type(2) {
+	width: 72px;
+	margin: 0 40px;
+}
+
+#gnb > li:nth-of-type(3) {
+	width: 106px;
+}
+
+#gnb > li:nth-of-type(4) {
+	width: 165px;
+	margin: 0 40px;
+}
+
+#gnb > li > a {
+	display: inline-block;
+	padding: 39px 0;
+	color: #111;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#gnb > li > a:hover {
+	font-weight: 500;
+}
+
+/*sub_menu*/
+.sub_wrap {
+	position: absolute;
+	left: 0px;
+	top: 100px;
+	width: 100%;
+	height: auto;
+	padding: 30px 0 70px 0;
+	z-index: 20;
+	background-color: #fff;
+}
+
+.submenu {
+	max-width: 89vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.submenu .img_box {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submenu .img_box img {
+	width: 100%;
+	transition: filter .3s;
+}
+
+.submenu p {
+	padding-top: 20px;
+	text-align: center;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.submenu li a:hover img {
+	filter: brightness(50%);
+}
+
+#account li {
+	float: left;
+	margin-left: 25px;
+}
+
+#account i {
+	font-size: 22px;
+	color: #666;
+}
+
+#account i:hover {
+	color: #111;
+}
+
+#account li:nth-of-type(1) {
+	margin-left: 0px;
+}
+
+/*sidebar*/
+.sidebar_btn {
+	display: none;
+}
+
+#sidebar {
+	display: none;
+}
+
+/*main*/
+main {
+	margin: 335px 0 50px 0; /*header 값*/
+}
+
+section {
+	position: relative;
+	max-width: 89vw;
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+section:last-child {
+	padding-bottom: 50px;
+}
+
+section .content_wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+section .img_box {
+	width: 20vw;
+	height: auto;
+}
+
+section .img_box img {
+	width: 100%;
+}
+
+section .text_wrap {
+	margin: 20px 0 70px 0;
+}
+
+section .title {
+	font-size: calc(0.60vw + 7.43px);
+	padding-bottom: 7px;
+}
+
+section .price {
+	font-size: calc(0.60vw + 5.43px);
+}
+
+section .more_box {
+	text-align: center;
+}
+
+section .more_box .more {
+	padding: 20px 60px;
+	border: 1px solid #111;
+	background-color: #111;
+	color: #fff;
+	font-size: calc(0.89vw + 5.14px);
+	display: inline-block;
+	transition: all .3s;
+}
+
+section .more_box .more:hover {
+	background-color: #fff;
+	border: 1px solid #111;
+	color: #111;
+}
+
+/*footer*/
+footer {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+
+footer .inner {
+	max-width: 89vw;
+	display: flex;
+	justify-content: space-between;
+	padding: 70px 0;
+}
+
+footer .left_wrap .logo_icon img {
+	width: 50px;
+	height: auto;
+}
+
+footer .left_wrap p {
+	margin: 20px 0;
+	font-size: calc(0.56vw + 7.89px);
+}
+
+footer .left_wrap address {
+	font-size: calc(0.56vw + 7.89px);
+	font-style: normal;
+}
+
+footer #mo_sign_up {
+	display: none;
+}
+
+.right_wrap .login_box {
+	display: inline-block;
+	padding: 20px;
+	border: 1px solid #111;
+	font-size: calc(0.56vw + 7.89px);
+	transition: all .5s;
+}
+
+.right_wrap .login_box p {
+	display: inline-block;
+}
+
+.right_wrap .login_box .sign_up {
+	padding-left: 150px;
+}
+
+.right_wrap .login_box:hover {  
+	background: #111;
+	color: #fff;
+}
+
+.right_wrap_inner {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 50px;
+	font-size: calc(0.56vw + 7.89px);
+}
+
+.right_wrap_inner li {
+	padding-bottom: 20px;
+}
+
+.right_wrap_inner #company_box {
+	margin: 0 80px;
+}
+
+.right_wrap_inner #social_box a {
+	margin-right: 10px;
+}
+
+.right_wrap_inner #social_box i {
+	font-size: 20px;
+}
+
+
+

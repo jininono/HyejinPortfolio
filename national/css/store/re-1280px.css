@@ -1,0 +1,80 @@
+@media all and (max-width: 1279px) {
+
+	html {
+		font-size: 9px;
+	}
+
+	/*header*/
+	header .logo img {
+		width: 120px;
+		padding: 25px 0 20px 0;
+	}
+
+	.sidebar_inner .logo img {
+		width: 120px;
+	}
+
+	/*search*/
+	.search_inner {
+		position: absolute;
+		left: 0;
+		top: 28px;
+	}
+
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		right: 0;
+		top: 40px;
+	}
+
+	.sidebar_inner #sidebar_gnb {
+		position: absolute;
+		top: 110px;
+		right: 0px;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 30px;
+		right: 0px;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+
+	/*scroll*/
+	.scroll-downs {
+	  position: fixed;
+	  top: 50%;
+	  right: 50px;
+	  margin: auto;
+	  width :34px;
+	  height: 55px;
+	  z-index: 100;
+	}
+
+	.mousey {
+	  width: 2px;
+	  padding: 10px 15px;
+	  height: 33px;
+	  border: 2px solid #fff;
+	  border-radius: 25px;
+	  opacity: 0.75;
+	  box-sizing: content-box;
+	}
+
+	/*main*/
+	main {
+		padding-top: 86px; /*header값*/
+	}
+
+	/*footer*/
+	footer .left_wrap .logo_icon img {
+		width: 120px;
+	}
+
+	footer .right_wrap .contact_wrap .num {
+		padding-top: 25px;
+	}
+}

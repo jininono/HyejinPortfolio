@@ -1,0 +1,182 @@
+@media all and (max-width:1279px) {
+
+	html {
+		font-size: 9px;
+	}
+
+	.inner {
+		max-width: 89vw;
+		margin: 0 auto;
+	}
+
+	/*header*/
+	header .logo img {
+		width: 120px;
+		padding: 25px 0 20px 0;
+	}
+
+	.sidebar_inner .logo img {
+		width: 120px;
+	}
+
+	.sidebar_inner #sidebar_gnb {
+		position: absolute;
+		top: 110px;
+		right: 0px;
+	}
+
+	/*sect01*/
+	#sect01 {
+		width: 100%;
+		height: auto;
+	}
+
+	#sect01 .inner {
+		display: flex;
+		justify-content: center;
+	}
+
+	#sect01 .left_wrap {
+		position: relative;
+	}
+
+	#sect01 .left_wrap .img_box {
+		width: 67vw;
+		height: auto;
+	}
+
+	#sect01 .right_wrap .text_wrap {
+		width: 135px;
+		height: auto;
+	}
+
+	#sect01 .section_title2 {
+		margin-bottom: 20px;
+	}
+
+
+	/*sect02*/
+	#sect02 .inner {
+		max-width: 89vw;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	#sect02 .arrow_wrap {
+		position: absolute;
+		right: 5px;
+		top: 40px;
+	}
+
+	#sect02 .arrow_wrap i {
+		font-size: 15px;
+		cursor: pointer;
+	}
+
+	#sect02 .arrow_wrap i:first-child {
+		margin-right: 20px;
+	}
+
+	#sect02 .content_wrap {
+		overflow: hidden;
+	}
+
+	#sect02 .content_wrap ul {
+		position: relative;
+		margin-top: 40px;
+		width: 3000px;
+	}
+
+	#sect02 .content_wrap ul li {
+		float: left;
+		width: 20vw;
+		height: auto;
+		margin-right: 3vw;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#sect02 .content_box .img_box img {
+		width: 100%;
+		border-radius: 5px;
+		transition: all .5s;
+	}
+
+	#sect02 .content_box .view {
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #fff;
+		opacity: 0;
+		transition: all 0.5s;
+		text-align: center;
+		font-size: 1.6rem;
+	}
+
+	#sect02 .content_box:hover img {
+		filter: brightness(50%);
+	}
+
+	#sect02 .content_box:hover .view {
+		opacity: 1;
+	}
+
+	#sect02 .text_wrap a {
+		margin-top: 15px;
+		display: block;
+		text-align: center;
+		font-size: 1.6rem;
+	}
+
+	/*sect03*/
+	#sect03 .content_box .view {
+		font-size: 2vw;
+	}
+
+	#sect03 .text_wrap .title {
+		font-size: 1.4vw;
+		margin: 30px 0 10px 0;
+	}
+
+	#sect03 .text_wrap .txt {
+		font-size: 1.1vw;
+		color: #333;
+	}
+
+	/*sect04*/
+	#sect04 .text_box1 {
+		width: 89vw;
+		height: auto;
+		text-align: right;
+		position: absolute;
+		right: 60px;
+		top: 70px;
+		color: #fff;
+	}
+
+	#sect04 .text_box2 {
+		width: 89vw;
+		height: auto;
+		position: absolute;
+		left: 60px;
+		bottom: 70px;
+		color: #fff;
+	}
+
+	/*footer*/
+	footer .left_wrap .logo_icon img {
+		width: 120px;
+	}
+
+	footer .right_wrap .contact_wrap .num {
+		padding-top: 25px;
+	}
+
+
+
+
+
+
+}
+
