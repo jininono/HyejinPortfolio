@@ -17,7 +17,7 @@ body {
   height: 100%;
   color: #3f3f3f;
   background-size: 90%;
-  background-color: #fff;
+  background-color: #fffff9;
 }
 
 .clearfix::after {
@@ -98,7 +98,7 @@ header #gnb > li {
 header #gnb > li > a {
   width: 9.5rem;
   display: inline-block;
-  padding: .3rem 0;
+  padding: .5rem 0;
   font-size: 1.6rem;
   font-weight: 500;
   border-radius: 15px; 
@@ -367,7 +367,7 @@ header #gnb > li:hover > a {
 }
 
 #abillty .abillty_wrap:nth-of-type(2) {
-  background-color: #F5F5F5;
+  background-color: #ecf2ff;
 }
 
 #abillty .abillty_wrap:nth-of-type(3) {
@@ -725,7 +725,7 @@ header #gnb > li:hover > a {
   display: inline-block;
   transition: all .3s;
   border-radius: 5px;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 .redesign_group .inner .link a:hover {
@@ -746,12 +746,12 @@ header #gnb > li:hover > a {
 
 #portfolio .inner .hover_box {
   left: -25%;
-  top: 10%;
+  top: 15%;
 }
 
 #portfolio2 .inner .hover_box {
   right: -25%;
-  top: 10%;
+  top: 15%;
 }
 
 /*portfolio3 Clone Coding*/
@@ -822,7 +822,7 @@ header #gnb > li:hover > a {
   font-size: 6rem;
   font-family: 'Caveat', cursive;
   font-weight: 400;
-  padding-bottom: 30px;
+  padding-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -833,7 +833,7 @@ header #gnb > li:hover > a {
 
 #contact .inner .text_box p {
   font-size: 1.4rem;
-  padding-bottom: 3px;
+  padding-bottom: .3rem;
 }
 
 #contact .inner .contact_wrap {
@@ -846,7 +846,7 @@ header #gnb > li:hover > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25vw;
+  width: 27vw;
   height: 55vh;
   background-color: #e3dffd;
   border-top-left-radius: 5px;
@@ -854,7 +854,7 @@ header #gnb > li:hover > a {
 }
 
 #contact .left_wrap .profile_list {
-  width: 17vw;
+  width: 18vw;
   height: 40vh;
   background: #fff;
   display: flex;
@@ -866,31 +866,35 @@ header #gnb > li:hover > a {
 }
 
 #contact .left_wrap .profile_list li {
-  font-size: 1.2rem;
-  padding-bottom: 20px;
+  font-size: 1.4rem;
+  padding-bottom: 2.5rem;
 }
 
 #contact .left_wrap .profile_list .title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  padding-bottom: 5px;
+  padding-bottom: .5rem;
 }
 
 #contact .left_wrap .profile_list img {
-  width: 1.4rem;
-  margin-right: 10px;
+  width: 1.6rem;
+  margin-right: 1rem;
+}
+
+#contact .left_wrap .profile_list .txt {
+  font-size: 1.4rem;
 }
 
 #contact .right_wrap {
-  width: 48vw;
+  width: 50vw;
   height: 55vh;
-  background-color: #F5F5F5;
+  background-color: #ecf2ff;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 #contact .right_wrap .row {
-  width: 48vw;
+  width: 50vw;
   height: 55vh;
   display: flex;
   flex-direction: column;
@@ -899,7 +903,7 @@ header #gnb > li:hover > a {
 }
 
 #contact .right_wrap .row .form_box {
-  width: 38vw;
+  width: 40vw;
   display: flex;
   justify-content: space-between;
   padding-top: 5%;
@@ -918,14 +922,14 @@ form textarea {
   border: solid 1px #e3dffd;
   border-radius: 5px;
   width: 18vw;
-  line-height: 15px;
-  padding: 15px;
+  line-height: 1.5rem;
+  padding: 1.5rem;
   font-size: 1.4rem;
 }
 
 form textarea {
   min-height: 25vh;
-  min-width: 38vw;
+  min-width: 40vw;
 }
 
 input[type="submit"] {
@@ -935,7 +939,7 @@ input[type="submit"] {
   text-decoration: none;
   border: solid 1px #e3dffd;
   border-radius: 30px;
-  padding: 10px 25px;
+  padding: 1rem 2.5rem;
   cursor: pointer;
   outline: 0;
   font-size: 1.4rem;
@@ -943,7 +947,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #e3dffd;
-  border: solid 1px #F5F5F5;
+  border: solid 1px #ecf2ff;
 }
 
 #contact .right_wrap .thankyou_message {
