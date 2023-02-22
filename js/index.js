@@ -1,38 +1,28 @@
 $(function(){
 
-	
+	//gnb 클릭 시 이동
+	var gnbA = $('#gnb li a');
 
-	//hover
-	// var pgInner = $('.portfolio_group .inner');
-	// var pgDesktop1 = $('#portfolio .desktop_box');
-	// var pgDesktop2 = $('#portfolio2 .desktop_box');
+	gnbA.on('click',function(e){
+		var a = $(this).attr('href');
+		var pos = $(a).offset().top;
+		
+		$('html, body').animate({
+			scrollTop: pos
+		},1000,"swing");
 
-	// pgInner.mousemove(function(e){
+		if($(this).hasClass('active-color')==true){ 
+			$(this).removeClass('active-color');
 
-	// 	event.preventDefault(); 
+		}else{
+			gnbA.removeClass('active-color');
+			$(this).addClass('active-color');
+		}
 
-	//     var mouseX = e.clientX;
-	//     var mouseY = e.clientY;
+		//URL에 #id 표시되지 않도록
+		e.preventDefault();
 
-	//     $('.hover_box').css({
-	//         left: mouseX + "px",
-	//         top : mouseY + "px"
-	//     })
-	// });
-
-	// pgDesktop1.hover(function(){
-	// 	$('#tw_hover_box').css('visibility','visible');
-
-	// },function(){
-	// 	$('#tw_hover_box').css('visibility','hidden');
-	// });
-
-	// pgDesktop2.hover(function(){
-	// 	$('#ng_hover_box').css('visibility','visible');
-
-	// },function(){
-	// 	$('#ng_hover_box').css('visibility','hidden');
-	// });
+	});
 
 });
 

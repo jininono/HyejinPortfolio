@@ -93,19 +93,24 @@ header .logo a span {
 header #gnb > li {
   float: left;
   text-align: center;
+  margin-right: .5rem;
 }
 
 header #gnb > li > a {
-  width: 9.5rem;
+  width: 9rem;
   display: inline-block;
   padding: .3rem 0;
   font-size: 1.6rem;
   font-weight: 500;
   border-radius: 15px; 
-  transition: all .3s;
+  transition: all .5s;
 }
 
 header #gnb > li:hover > a {
+  background-color: #e3dffd;
+}
+
+header #gnb > li > a.active-color {
   background-color: #e3dffd;
 }
 
@@ -116,15 +121,14 @@ header #gnb > li:hover > a {
 
 /*home*/
 #home {
-  margin-top: 10vh;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 
 #home .text_wrap {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 20%;
 }
 
@@ -145,7 +149,7 @@ header #gnb > li:hover > a {
 .wave {
   opacity: .4;
   position: absolute;
-  top: -30%;
+  top: -20%;
   right: -10%;
   background: #86E5FF;
   width: 45rem;
@@ -814,53 +818,58 @@ header #gnb > li:hover > a {
   padding-top: 10vh;
 }
 
-#contact .inner {
+#contact .contact_inner {
+  width: 100%;
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#contact .inner > .title {
+#contact .contact_inner .text_wrap .title {
   font-size: 6rem;
   font-family: 'Caveat', cursive;
   font-weight: 400;
-  padding-bottom: 30px;
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 15px;
+}
+
+#contact .contact_inner .text_box {
   text-align: center;
 }
 
-#contact .inner .text_box {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-#contact .inner .text_box p {
+#contact .contact_inner .text_box p {
   font-size: 1.4rem;
   padding-bottom: 3px;
 }
 
-#contact .inner .contact_wrap {
+#contact .contact_inner .contact_wrap {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 2%;
 }
 
-#contact .inner .left_wrap {
+#contact .contact_inner .left_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 25vw;
-  height: 55vh;
+  height: 52vh;
   background-color: #e3dffd;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
 #contact .left_wrap .profile_list {
-  width: 17vw;
-  height: 40vh;
+  width: 20vw;
+  height: 45vh;
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10%;
+  padding: 3% 0 0 10%;
   border-radius: 5px;
 
 }
@@ -882,8 +891,6 @@ header #gnb > li:hover > a {
 }
 
 #contact .right_wrap {
-  width: 48vw;
-  height: 55vh;
   background-color: #F5F5F5;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -891,22 +898,33 @@ header #gnb > li:hover > a {
 
 #contact .right_wrap .row {
   width: 48vw;
-  height: 55vh;
+  height: 52vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
+#contact .right_wrap .thankyou_message {
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+  visibility: hidden;
+  padding: 3% 0;
+}
+
 #contact .right_wrap .row .form_box {
-  width: 38vw;
+  width: 40vw;
   display: flex;
   justify-content: space-between;
-  padding-top: 5%;
 }
 
 #contact .right_wrap .row .form_box2 {
-  margin: 5% 0 4% 0;
+  padding: 3% 0;
+}
+
+#contact .right_wrap .row .form_box3 {
+  padding-bottom: 3%;
 }
 
 form input[type="text"],
@@ -918,14 +936,15 @@ form textarea {
   border: solid 1px #e3dffd;
   border-radius: 5px;
   width: 18vw;
-  line-height: 15px;
-  padding: 15px;
+  line-height: 1rem;
+  padding: 1rem;
   font-size: 1.4rem;
 }
 
 form textarea {
-  min-height: 25vh;
-  min-width: 38vw;
+  width: 40vw;
+  height: 25vh;
+  line-height: 2rem;
 }
 
 input[type="submit"] {
@@ -946,32 +965,13 @@ input[type="submit"]:hover {
   border: solid 1px #F5F5F5;
 }
 
-#contact .right_wrap .thankyou_message {
-  font-weight: 400;
-  font-size: 1.4rem;
+#footer {
+  height: 8vh;
+  line-height: 8vh;
+  background-color: #e3dffd;
   text-align: center;
-  display: none;
+  font-size: 1.2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media all and (min-width:1536px) and (max-width:1919px) {
 
