@@ -71,6 +71,20 @@
     }
 
     /* about */
+    #about {
+        width: 100%;
+        height: 600px;
+        padding-top: 100px;
+    }
+
+    #about .about_content {
+        height: 400px;
+    }
+
+    #about .right_wrap {
+        height: 400px;
+    }
+
     #about .right_wrap .text_wrap {
         width: 335px;
         height: auto;
@@ -127,19 +141,26 @@
     }
 
     /*portfolio / redesign_group*/
-    .redesign_group .inner .mockup_wrap {
-        width: 250px;
+    .redesign_group {
+        width: 100%;
+        height: 700px;
+        padding-top: 100px;
+        margin-top: 0vh;
     }
 
     .redesign_group .inner {
         width: 70vw;
-        height: 70vh;
+        height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         position: relative;
+    }
+
+    .redesign_group .inner .mockup_wrap {
+        width: 250px;
     }
 
     .redesign_group .inner .text_wrap {
@@ -170,6 +191,13 @@
     /*redesign_group 공통*/
 
     /*portfolio3 Clone Coding*/
+    #portfolio3 {
+        width: 100%;
+        height: auto;
+        padding-top: 10vh;
+        text-align: center;
+    }
+
     #portfolio3 .text_box {
         height: auto;
         display: flex;
@@ -195,14 +223,14 @@
     /*contact*/
     #contact {
         width: 100%;
-        margin-top: 90%;
+        margin-top: 0px;
         /* portfolio 높이 값 */
     }
 
     #contact .contact_inner {
         width: 100%;
-        height: 130vh;
-        padding-top: 12vh;
+        height: 110vh;
+        padding-top: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -212,8 +240,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 77vw;
-        height: 20vh;
+        width: 80vw;
+        height: 18vh;
         background-color: #e3dffd;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -221,8 +249,8 @@
     }
 
     #contact .left_wrap .profile_list {
-        width: 70vw;
-        height: 15vh;
+        width: 72vw;
+        height: 13vh;
         background: #fff;
         display: flex;
         flex-direction: row;
@@ -235,7 +263,7 @@
     }
 
     #contact .right_wrap .row {
-        width: 77vw;
+        width: 80vw;
         height: 60vh;
         display: flex;
         flex-direction: column;
@@ -243,8 +271,13 @@
         align-items: center;
     }
 
+    #contact .right_wrap .thankyou_message {
+        padding-top: 5%;
+        padding-bottom: 0;
+    }
+
     #contact .right_wrap .row .form_box {
-        width: 65vw;
+        width: 70vw;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -262,14 +295,14 @@
         background: #fff;
         border: solid 1px #e3dffd;
         border-radius: 5px;
-        width: 65vw;
+        width: 70vw;
         line-height: 10px;
         padding: 10px;
         font-size: calc(0.51vw + 8.09px);
     }
 
     form textarea {
-        width: 65vw;
+        width: 70vw;
         height: 30vh;
         line-height: 1.8;
     }
