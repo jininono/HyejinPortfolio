@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- jquery -->
-    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="js/index2.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fullpage -->
+    <link rel="stylesheet" href="js/jquery.fullpage.css">
+    <script type="text/javascript" src="js/jquery.fullpage.js"></script>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,11 @@
     <script src="https://kit.fontawesome.com/dda79a3f67.js" crossorigin="anonymous"></script>
 
     <!-- style -->
-    <link rel="stylesheet" media="screen" href="css/style2.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" media="screen" href="css/re-1280px.css">
+    <link rel="stylesheet" media="screen" href="css/re-1024px2.css">
+    <link rel="stylesheet" media="screen" href="css/re-768px2.css">
+    <link rel="stylesheet" media="screen" href="css/mobile2.css">
 
     <meta name="description" content="웹 퍼블리셔 노혜진 포트폴리오">
     <meta name="keywords" content="웹 퍼블리셔, 신입 웹 퍼블리셔, 포트폴리오, 웹 퍼블리셔 포트폴리오, 웹 디자인, 웹 디자이너, UI, UX, 웹 표준, hyejinno, 노혜진">
@@ -36,435 +41,434 @@
         <header>
             <div class="inner">
                 <h1 class="logo">
-                    <a href="index.html">NO<span>?</span>YES<span>!</span></a>
+                    <a href="index2.html">NO<span>?</span>YES<span>!</span></a>
                 </h1>
                 <ul id="gnb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#abillty">Abillty</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="gnb_a">Home</a></li>
+                    <li><a href="#about" class="gnb_a">About</a></li>
+                    <li><a href="#abillty" class="gnb_a">Abillty</a></li>
+                    <li><a href="#portfolio" class="gnb_a">Portfolio</a></li>
+                    <li><a href="#contact" class="gnb_a">Contact</a></li>
                 </ul>
-            </div>
+                <!-- mobile sidebar_btn -->
+                <div id="sidebar_btn">
+                    <button><span></span></button>
+                </div>
+            </div> <!-- inner -->
         </header>
 
         <!-- mobile sidebar -->
         <div id="sidebar">
             <div class="sidebar_inner">
-                    <div class="close"></div>
-                    <ul id="sidebar_gnb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#abillty">Abillty</a></li>
-                        <li><a href="#portfolio">Portfolio</a>
-                            <ul class="gnb_sub">
-                               <li><a href="#portfolio">Tom Wood</a></li> 
-                               <li><a href="#portfolio2">National</a></li> 
-                               <li><a href="#portfolio3">Clone Coding</a></li> 
-                            </ul>
-                        </li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul> <!-- sidebar_gnb -->
-                </div> <!-- sidebar_inner -->
-            </div> <!-- sidebar -->
+                <div class="close"></div>
+                <ul id="sidebar_gnb">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#abillty">Abillty</a></li>
+                    <li><a href="#portfolio">Web Redesign #1</a></li> 
+                    <li><a href="#portfolio2">Web Redesign #2</a></li> 
+                    <li><a href="#portfolio3">Clone Coding</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                </ul> <!-- sidebar_gnb -->
+            </div> <!-- sidebar_inner -->
+        </div> <!-- sidebar -->
         <div id="sidebar_bg"></div>
 
-        <section id="home">
-            <div class="inner">
-                <div class="text_wrap">
-                    <p class="txt">Web Publisher Hyejin's</p>
-                    <strong class="title">PORTFOLIO</strong> 
+        <div id="fullpage">
+            <section id="home" class="section" data-tooltip="Home">
+                <div class="inner">
+                    <div class="text_wrap">
+                        <p class="txt">Web Publisher Hyejin's</p>
+                        <strong class="title">PORTFOLIO</strong> 
+                    </div>
                 </div>
-            </div>
 
-            <div class="wave_box">
-                <div class="wave -one"></div>
-                <div class="wave -two"></div>
-                <div class="wave -three"></div>
-                <div class="wave2 -one"></div>
-                <div class="wave2 -two"></div>
-                <div class="wave2 -three"></div>
-                <div class="wave3 -one"></div>
-                <div class="wave3 -two"></div>
-                <div class="wave3 -three"></div>
-            </div>
+                <div class="wave_box">
+                    <div class="wave -one"></div>
+                    <div class="wave -two"></div>
+                    <div class="wave -three"></div>
+                    <div class="wave2 -one"></div>
+                    <div class="wave2 -two"></div>
+                    <div class="wave2 -three"></div>
+                    <div class="wave3 -one"></div>
+                    <div class="wave3 -two"></div>
+                    <div class="wave3 -three"></div>
+                </div>
 
-            <div id="scroll"><span></div>
-        </section>
+                <div id="scroll"><span></div>
+            </section>
 
-         <!-- ABOUT -->
-        <section id="about">
-            <div class="inner">
-                <div class="about_content">
-                    <div class="left_wrap">
-                        <img src="img/profile.png" alt="프로필 사진">
-                        <div class="text_wrap">
-                            <ul class="text_info1">
-                                <li>Name</li>
-                                <li>Birth</li>
-                                <li>Phone</li>
-                                <li>Mail</li>
-                            </ul>
-                            <ul class="text_info2">
-                                <li>노혜진</li>
-                                <li>1996.11.22</li>
-                                <li>010.4099.2269</li>
-                                <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jininono96@gmail.com" onClick="window.open(this.href, '', 'width=800, height=600'); return false;">jininono96@gmail.com</a></li>
-                            </ul>
-                        </div> <!-- text_wrap -->
-                    </div> <!-- left_wrap -->
+            <!-- ABOUT -->
+            <section id="about" class="section" data-tooltip="About">
+                <div class="inner">
+                    <div class="about_content">
+                        <div class="left_wrap">
+                            <img src="img/profile.png" alt="프로필 사진">
+                            <div class="text_wrap">
+                                <ul class="text_info1">
+                                    <li>Name</li>
+                                    <li>Birth</li>
+                                    <li>Phone</li>
+                                    <li>Mail</li>
+                                </ul>
+                                <ul class="text_info2">
+                                    <li>노혜진</li>
+                                    <li>1996.11.22</li>
+                                    <li>010.4099.2269</li>
+                                    <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jininono96@gmail.com" onClick="window.open(this.href, '', 'width=800, height=600'); return false;">jininono96@gmail.com</a></li>
+                                    <li class="resume_btn_wrap mobile"><a class="resume_btn" href="#" download="노혜진_이력서">이력서 확인하기</a></li>
+                                </ul>
+                            </div> <!-- text_wrap -->
+                        </div> <!-- left_wrap -->
 
-                    <div class="right_wrap">
-                        <h1 class="title">도전을 두려워하지 않는<br>작지만 강한 웹 퍼블리셔 노혜진입니다!</h1>
-                        <div class="text_wrap">
-                            <p>프로젝트의 가장 기본적인 틀을 제공한다는 점에서 즐거움을 느껴 웹 퍼블리셔의 길을 선택하게 되었습니다.</p>
-                            <p>웹 페이지의 뼈대를 만들고 CSS와 JavaScript를 활용하여 동적인 모션을 구현하는 것을 좋아합니다.</p>
-                            <p>일상에서 자주 사용되는 만큼 누구나 쉽게 접할 수 있도록 웹 표준과 웹 접근성을 충분히 고려한 마크업을 하기 위해 노력합니다.</p>
+                        <div class="right_wrap">
+                            <h1 class="title">도전을 두려워하지 않는<br>작지만 강한 웹 퍼블리셔 노혜진입니다!</h1>
+                            <div class="text_wrap">
+                                <p>프로젝트의 가장 기본적인 틀을 제공한다는 점에서 즐거움을 느껴 웹 퍼블리셔의 길을 선택하게 되었습니다.</p>
+                                <p>웹 페이지의 뼈대를 만들고 CSS와 JavaScript를 활용하여 동적인 모션을 구현하는 것을 좋아합니다.</p>
+                                <p>일상에서 자주 사용되는 만큼 누구나 쉽게 접할 수 있도록 웹 표준과 웹 접근성을 충분히 고려한 마크업을 하기 위해 노력합니다.</p>
+                            </div>
+                            <div class="resume_btn_wrap pc">
+                                <a class="resume_btn" href="#" download="노혜진_이력서">이력서 확인하기</a>
+                            </div>
                         </div>
-                        <div class="resume_btn_wrap">
-                            <a class="resume_btn" href="#" download="노혜진_이력서">이력서 확인하기</a>
-                        </div>
-                    </div>
-                </div> <!-- about_content -->
-            </div> <!-- inner -->
-        </section>
-
-        <section id="abillty">
-            <div class="abillty_wrap">
-                <div class="inner">
-                    <div class="img_box">
-                        <img src="img/abillty01.png" alt="업무스타일">
-                        <span class="arrow">Work Style</span>
-                    </div>
-                    <div class="text_box">
-                        <ul>
-                            <li>1. 웹 표준을 준수하여 시멘틱 마크업을 작성하고 웹 접근성을 우선시합니다.</li>
-                            <li>2. vw, rem 등 상대 단위와 미디어 쿼리를 활용하여 반응형 웹을 제작합니다.</li>
-                            <li>3. 소통을 중요시하며 정보 전달에 능숙합니다.</li>
-                            <li>4. 책임감이 강하여 주어진 업무는 끝까지 수행합니다.</li>
-                            <li>5. 적응력이 빠르고 끈임없이 배우고 발전하려 노력합니다.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="abillty_wrap">
-                <div class="inner">
-                    <div class="img_box">
-                        <img src="img/abillty02.png" alt="경력">
-                        <span class="arrow">Experiences</span>
-                    </div>
-                    <div class="text_box">
-                        <ul>
-                            <li><span>2022.08 - 2023.02</span>반응형 UX/UI 웹 퍼블리셔 과정 수료</li>
-                            <li><span>2021.03 - 2022.08</span>(주)티쿤글로벌 개발본부 QA팀 유지보수 고객지원</li>
-                            <li><span>2020.07 - 2020.11</span>(주)라벨루나 카페 24 관리 및 일본몰 전체 관리</li>
-                            <li><span>2019.04 - 2020.02</span>일본 도쿄 의류 면세점 근무</li>
-                            <li><span>2015.04 - 2019.03</span>Bunka Gakuen University 학사 졸업</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="abillty_wrap">
-                <div class="inner">
-                    <div class="img_box">
-                        <img src="img/abillty03.png" alt="자격증">
-                        <span class="arrow">License</span>
-                    </div>
-                    <div class="text_box">
-                        <ul>
-                            <li><span>2023.02</span>웹디자인기능사 필기(실기 예정)</li>
-                            <li><span>2021.02</span>MOS Word Expert</li>
-                            <li><span>2020.06</span>ACA Illustrator</li>
-                            <li><span>2020.05</span>ACA Photoshop</li>
-                            <li><span>2014.08</span>(新)JLPT N1(일본어능력시험 1급)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="abillty_wrap">
-                <div class="inner">
-                    <div class="img_box">
-                        <img src="img/abillty04.png" alt="능력">
-                        <span class="arrow">Skill</span>
-                    </div>
-                    <div class="text_box">
-                        <ul>
-                            <li>
-                                <span class="txt">HTML</span>
-                                <div class="graph stick1" >
-                                    <span style="width: 90%;">90%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="txt">CSS</span>
-                                <div class="graph stick1">
-                                    <span style="width: 90%;">90%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="txt">Js</span>
-                                <div class="graph stick3">
-                                    <span style="width: 70%;">70%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="txt">Ps</span>
-                                <div class="graph stick2">
-                                    <span style="width: 80%;">80%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="txt">Ai</span>
-                                <div class="graph stick3">
-                                    <span style="width: 70%;">70%</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    </div> <!-- about_content -->
                 </div> <!-- inner -->
-            </div> <!-- abillty_wrap -->
-        </section>
+            </section>
 
-        <section id="portfolio" class="portfolio_group redesign_group">
-            <div class="inner">
-                <div class="mockup_wrap left_wrap">
-                    <a href="https://jininono.github.io/TomwoodRedesign/" target="_blank">
-                        <div class="desktop_box">
-                            <div class="img_box" style="background-image: url(img/tomwood_desktop.png);"></div>
-                            <div class="frame"></div>
-                            <div class="hover_box" id="tw_hover_box">
-                                <h2 class="title">컨셉 설명</h2>
-                                <div class="txt">
-                                    톰우드 쥬얼리만의 클래식하고 세련된 분위기는 유지하고 각 서브 페이지를 컨텐츠별로 재배치하여 가독성과 통일성을 높였습니다.
-                                </div>
+            <section id="abillty" class="section" data-tooltip="Abillty">
+                <div class="abillty_wrap">
+                    <div class="abillty_box">
+                        <div class="inner">
+                            <div class="img_box">
+                                <img src="img/abillty01.png" alt="업무스타일">
+                                <span class="arrow">Work Style</span>
+                            </div>
+                            <div class="title_mo">Work Style</div>
+                            <div class="text_box no_1">
+                                <ul>
+                                    <li>1. 웹 표준을 준수하여 시멘틱 마크업을 작성하고 웹 접근성을 우선시합니다.</li>
+                                    <li>2. vw, rem 등 상대 단위와 미디어 쿼리를 활용하여 반응형 웹을 제작합니다.</li>
+                                    <li>3. 소통을 중요시하며 정보 전달에 능숙합니다.</li>
+                                    <li>4. 책임감이 강하여 주어진 업무는 끝까지 수행합니다.</li>
+                                    <li>5. 적응력이 빠르고 끈임없이 배우고 발전하려 노력합니다.</li>
+                                </ul>
                             </div>
                         </div>
-                    </a>
-                    <a href="#portfolio" onClick="javascript:window.open('https://jininono.github.io/TomwoodRedesign/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">
-                        <div class="mobile_box">
-                            <div class="img_box" style="background-image: url(img/tomwood_mobile.png);"></div>
-                            <div class="frame"></div>
-                        </div>
-                    </a>
-                </div> <!--mockup_wrap -->
-                <div class="text_wrap">
-                    <div class="title_box">
-                        <p class="redesign">Web Redesign</p>
-                        <h2 class="title">Tom Wood</h2>
-                        <p class="txt"><i class="fa-solid fa-square-check" style="color: #a5aeac;"></i>클래식 쥬얼리 브랜드</p>
                     </div>
-                    <ul class="text_box">
-                        <li>
-                            <span class="title">TYPE</span>
-                            <span class="txt">Responsive Web</span>
-                        </li>
-                        <li>
-                            <span class="title">PAGE</span>
-                            <span class="txt">Main + Sub*5</span>
-                        </li>
-                        <li>
-                            <span class="title">TOOL</span>
-                            <span class="txt">HTML, CSS, JS(jQuery), Ps</span>
-                        </li>
-                        <li>
-                            <span class="title">COLOR</span>
-                            <span class="color_icon">
-                                <i style="background-color: #a5aeac;">#a5aeac</i>
-                                <i style="background-color: #111;">#111</i>
-                                <i style="background-color: #bebebe;">#bebebe</i>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="title">참여도</span>
-                            <span class="txt">100% 개인 프로젝트</span>
-                        </li>
-                    </ul>
-                    <div class="link">
-                        <a href="https://jininono.github.io/TomwoodRedesign/" target="_blank">PC</a>
-                        <a href="#portfolio" onClick="javascript:window.open('https://jininono.github.io/TomwoodRedesign/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">MOBILE</a>
-                    </div>
-                </div> <!-- text_wrap -->
-            </div> <!-- inner -->
-        </section>
-
-         <section id="portfolio2" class="portfolio_group redesign_group">
-            <div class="inner">
-                <div class="text_wrap left_wrap">
-                    <div class="title_box">
-                        <p class="redesign">Web Redesign</p>
-                        <h2 class="title">National Geographic</h2>
-                        <p class="txt"><i class="fa-solid fa-square-check" style="color: #ffdb00;"></i>지구와 인류 그리고 &#39;우리&#39;</p>
-                    </div>
-                    <ul class="text_box">
-                        <li>
-                            <span class="title">TYPE</span>
-                             <span class="txt">Responsive Web</span>
-                        </li>
-                        <li>
-                            <span class="title">PAGE</span>
-                            <span class="txt">Main + Sub*5</span>
-                        </li>
-                        <li>
-                            <span class="title">TOOL</span>
-                            <span class="txt">HTML, CSS, JS(jQuery), Ps</span>
-                        </li>
-                        <li>
-                            <span class="title">COLOR</span>
-                            <span class="color_icon">
-                                <i style="background-color: #ffdb00;">#ffdb00</i>
-                                <i style="background-color: #1f1f1f;">#1f1f1f</i>
-                                <i style="background-color: #eee;">#eee</i>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="title">참여도</span>
-                            <span class="txt">100% 개인 프로젝트</span>
-                        </li>
-                    </ul>
-                    <div class="link">
-                        <p><a href="https://jininono.github.io/NationalRedesign/" target="_blank">PC</a></p>
-                        <p><a href="#portfolio2" onClick="javascript:window.open('https://jininono.github.io/NationalRedesign/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">MOBILE</a></p>
-                    </div>
-                </div> <!--text_wrap -->
-                <div class="mockup_wrap">
-                    <a href="https://jininono.github.io/NationalRedesign/" target="_blank">
-                        <div class="desktop_box">
-                            <div class="img_box" style="background-image: url(img/national_desktop.png);"></div>
-                            <div class="frame"></div>
-                            <div class="hover_box" id="ng_hover_box">
-                                <h2 class="title">컨셉 설명</h2>
-                                <div class="txt">
-                                    내셔널 지오그래픽의 로고 색상으로 컨셉 컬러를 설정하고 내셔널 특유의 자유로움을 표현하기 위하여 서브 페이지를 각각 다르게 구성하였습니다.
-                                </div>
+                    <div class="abillty_box">
+                        <div class="inner">
+                            <div class="img_box">
+                                <img src="img/abillty02.png" alt="경력">
+                                <span class="arrow">Experiences</span>
+                            </div>
+                            <div class="title_mo">Experiences</div>
+                            <div class="text_box no_2">
+                                <ul>
+                                    <li><span>2022.08 - 2023.02</span>반응형 UX/UI 웹 퍼블리셔 과정 수료</li>
+                                    <li><span>2021.03 - 2022.08</span>(주)티쿤글로벌 개발본부 QA팀 유지보수 고객지원</li>
+                                    <li><span>2020.07 - 2020.11</span>(주)라벨루나 카페 24 관리 및 일본몰 전체 관리</li>
+                                    <li><span>2019.04 - 2020.02</span>일본 도쿄 의류 면세점 근무</li>
+                                    <li><span>2015.04 - 2019.03</span>Bunka Gakuen University 학사 졸업</li>
+                                </ul>
                             </div>
                         </div>
-                    </a>
-                    <a href="#portfolio2" onClick="javascript:window.open('https://jininono.github.io/NationalRedesign/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">
-                        <div class="mobile_box">
-                            <div class="img_box" style="background-image: url(img/national_mobile.png);"></div>
-                            <div class="frame"></div>
+                    </div>
+                    <div class="abillty_box">
+                        <div class="inner">
+                            <div class="img_box">
+                                <img src="img/abillty03.png" alt="자격증">
+                                <span class="arrow">License</span>
+                            </div>
+                            <div class="title_mo">License</div>
+                            <div class="text_box no_3">
+                                <ul>
+                                    <li><span>2023.02</span>웹디자인기능사 필기(실기 예정)</li>
+                                    <li><span>2021.02</span>MOS Word Expert</li>
+                                    <li><span>2020.06</span>ACA Illustrator</li>
+                                    <li><span>2020.05</span>ACA Photoshop</li>
+                                    <li><span>2014.08</span>(新)JLPT N1(일본어능력시험 1급)</li>
+                                </ul>
+                            </div>
                         </div>
-                    </a>
-                </div> <!-- mockup_wrap -->
-            </div> <!-- inner -->
-        </section>
+                    </div>
+                    <div class="abillty_box">
+                        <div class="inner">
+                            <div class="img_box">
+                                <img src="img/abillty04.png" alt="능력">
+                                <span class="arrow">Skill</span>
+                            </div>
+                            <div class="title_mo">Skill</div>
+                            <div class="text_box no_4">
+                                <ul>
+                                    <li>
+                                        <span class="txt">HTML</span>
+                                        <div class="graph stick1" >
+                                            <span style="width: 90%;">90%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="txt">CSS</span>
+                                        <div class="graph stick1">
+                                            <span style="width: 90%;">90%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="txt">Js</span>
+                                        <div class="graph stick3">
+                                            <span style="width: 70%;">70%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="txt">Ps</span>
+                                        <div class="graph stick2">
+                                            <span style="width: 80%;">80%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="txt">Ai</span>
+                                        <div class="graph stick3">
+                                            <span style="width: 70%;">70%</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> <!-- inner -->
+                    </div> <!-- abillty_box -->
+                </div> <!-- abillty_wrap -->
+            </section>
 
-        <section id="portfolio3" class="portfolio_group">
-            <div class="text_box">
-                <h1 class="title">Clone Coding</h1>
-                <p class="txt">&#8251;원본 사이트와 동일하게 모작하였습니다.</p>
-            </div>
-            <div class="inner">
-                <div class="content_box">
-                    <h2 class="name"><i class="fa-solid fa-square-check" style="color: #1aa56d;"></i>샐러디 / Responsive Web</h2>
-                    <div class="mockup_wrap salady_mockup">
-                        
-                        <a href="https://jininono.github.io/SaladyClone/" target="_blank">
+            <section id="portfolio" class="portfolio_group redesign_group section" data-tooltip="Tom Wood">
+                <div class="inner">
+                    <div class="mockup_wrap left_wrap">
+                        <a href="https://jininono.github.io/TomwoodRedesign/" target="_blank">
                             <div class="desktop_box">
-                                <div class="img_box" style="background-image: url(img/salady_desktop.png); transition: background-position 1s;"></div>
+                                <div class="img_box" style="background-image: url(img/tomwood_desktop.png);"></div>
                                 <div class="frame"></div>
+                                <div class="hover_box" id="tw_hover_box">
+                                    <h2 class="title">컨셉 설명</h2>
+                                    <div class="txt">
+                                        톰우드 쥬얼리만의 클래식하고 세련된 분위기는 유지하고 각 서브 페이지를 컨텐츠별로 재배치하여 가독성과 통일성을 높였습니다.
+                                    </div>
+                                </div>
                             </div>
                         </a>
-                        <a href="#portfolio3" onClick="javascript:window.open('https://jininono.github.io/SaladyClone/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">
+                        <a href="#portfolio" onClick="javascript:window.open('https://jininono.github.io/TomwoodRedesign/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">
                             <div class="mobile_box">
-                                <div class="img_box" style="background-image: url(img/salady_mobile.png); transition: background-position 2s;"></div>
+                                <div class="img_box" style="background-image: url(img/tomwood_mobile.png);"></div>
                                 <div class="frame"></div>
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="content_box">
-                    <h2 class="name"><i class="fa-solid fa-square-check" style="color: #916a43;"></i>소소문구 / Fullpage Web</h2>
-                    <div class="mockup_wrap sosomoongoo_mockup">
-                        <a href="https://jininono.github.io/SosomoongooClone/" target="_blank">
-                            <div class="desktop_box">
-                                <div class="img_box" style="background-image: url(img/sosomoongoo_desktop.png);"></div>
-                                <div class="frame"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="content_box">
-                    <h2 class="name"><i class="fa-solid fa-square-check" style="color: #1c9b97;"></i>하나은행 / Fullpage Web</h2>
-                    <div class="mockup_wrap hanabank_mockup">
-                        <a href="https://jininono.github.io/HanabankClone/" target="_blank">
-                            <div class="desktop_box">
-                                <div class="img_box" style="background-image: url(img/hanabank_desktop.png); transition: background-position 1s;" ></div>
-                                <div class="frame"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="inner">
-                <h1 class="title">Contact</h1>
-                <div class="text_box">
-                    <p>저의 포트폴리오를 끝까지 봐주셔서 감사합니다.</p>
-                    <p>저에게 궁금한 점이 있으시다면 연락주시길 바랍니다.</p>
-                </div>
-                <div class="contact_wrap">
-                    <div class="left_wrap">
-                        <ul class="profile_list">
+                    </div> <!--mockup_wrap -->
+                    <div class="text_wrap">
+                        <div class="title_box">
+                            <p class="redesign">Web Redesign</p>
+                            <h2 class="title">Tom Wood</h2>
+                            <p class="txt"><i class="fa-solid fa-square-check" style="color: #a5aeac;"></i>클래식 쥬얼리 브랜드</p>
+                        </div>
+                        <ul class="text_box">
                             <li>
-                                <p class="title">Name</p>
-                                <p>노혜진 / HYEJIN. NO</p>
+                                <span class="title">TYPE</span>
+                                <span class="txt">Responsive Web</span>
                             </li>
                             <li>
-                                <p class="title">Email</p>
-                                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jininono96@gmail.com" onClick="window.open(this.href, '', 'width=800, height=600'); return false;">jininono96@gmail.com</a>
+                                <span class="title">PAGE</span>
+                                <span class="txt">Main + Sub*5</span>
                             </li>
                             <li>
-                                <p class="title">Phone</p>
-                                <p>010.4099.2269</p>
+                                <span class="title">TOOL</span>
+                                <span class="txt">HTML, CSS, JS(jQuery), Ps</span>
                             </li>
                             <li>
-                                <p class="title">Social</p>
-                                <span><img src="img/github.svg"></span>
-                                <span><img src="img/talk.svg"></span>
-                                <span><img src="img/insta.svg"></span>
+                                <span class="title">COLOR</span>
+                                <span class="color_icon">
+                                    <i style="background-color: #a5aeac;">#a5aeac</i>
+                                    <i style="background-color: #111;">#111</i>
+                                    <i style="background-color: #bebebe;">#bebebe</i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="title">참여도</span>
+                                <span class="txt">100% 개인 프로젝트</span>
+                            </li>
+                            <li class="link">
+                                <a href="https://jininono.github.io/TomwoodRedesign/" target="_blank">PC</a>
+                                <a href="#portfolio" onClick="javascript:window.open('https://jininono.github.io/TomwoodRedesign/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">MOBILE</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="right_wrap">
-                        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxUdVwY-vDzhdIPZozRx5kkNcMkYFYTEjwIoxFeS_48857awEeRcsIWZK0DP0m4fUHQ/exec" id="contact_form" data-email="jininono96@gmail.com" target="frAttachFiles">
-                            <div class="row">
-                                <div class="thankyou_message">
-                                    <p>메일 전송에 성공하였습니다. 확인 후 회신드리겠습니다.</p>
-                                </div>
-                                <div class="form_box">
-                                    <input type="text" name="name" placeholder="Name" required>
-                                    <input type="email" name="email" placeholder="Email" required>
-                                </div>
-                                <div class="form_box2">
-                                    <textarea name="message" placeholder="저에게 궁금한 점이 있으시면 언제든지 문의해 주세요." required></textarea>
-                                </div>
-                                <div class="form_box3">
-                                    <input type="submit" value="Send Message">
+                    </div> <!-- text_wrap -->
+                </div> <!-- inner -->
+            </section>
+
+            <section id="portfolio2" class="portfolio_group redesign_group section" data-tooltip="National">
+                <div class="inner">
+                    <div class="text_wrap left_wrap">
+                        <div class="title_box">
+                            <p class="redesign">Web Redesign</p>
+                            <h2 class="title">Natgeokorea</h2>
+                            <p class="txt"><i class="fa-solid fa-square-check" style="color: #ffdb00;"></i>내셔널지오그래픽 코리아</p>
+                        </div>
+                        <ul class="text_box">
+                            <li>
+                                <span class="title">TYPE</span>
+                                <span class="txt">Responsive Web</span>
+                            </li>
+                            <li>
+                                <span class="title">PAGE</span>
+                                <span class="txt">Main + Sub*5</span>
+                            </li>
+                            <li>
+                                <span class="title">TOOL</span>
+                                <span class="txt">HTML, CSS, JS(jQuery), Ps</span>
+                            </li>
+                            <li>
+                                <span class="title">COLOR</span>
+                                <span class="color_icon">
+                                    <i style="background-color: #ffdb00;">#ffdb00</i>
+                                    <i style="background-color: #1f1f1f;">#1f1f1f</i>
+                                    <i style="background-color: #ddd;">#ddd</i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="title">참여도</span>
+                                <span class="txt">100% 개인 프로젝트</span>
+                            </li>
+                            <li class="link">
+                                <p><a href="https://jininono.github.io/NationalRedesign/" target="_blank">PC</a></p>
+                                <p><a href="#portfolio2" onClick="javascript:window.open('https://jininono.github.io/NationalRedesign/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">MOBILE</a></p>
+                            </li>
+                        </ul>
+                    </div> <!--text_wrap -->
+                    <div class="mockup_wrap">
+                        <a href="https://jininono.github.io/NationalRedesign/" target="_blank">
+                            <div class="desktop_box">
+                                <div class="img_box" style="background-image: url(img/national_desktop.png);"></div>
+                                <div class="frame"></div>
+                                <div class="hover_box" id="ng_hover_box">
+                                    <h2 class="title">컨셉 설명</h2>
+                                    <div class="txt">
+                                        내셔널지오그래픽의 로고 색상으로 컨셉 컬러를 설정하고 내셔널 특유의 자유로움을 표현하기 위하여 서브 페이지를 각각 다르게 구성하였습니다.
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </a>
+                        <a href="#portfolio2" onClick="javascript:window.open('https://jininono.github.io/NationalRedesign/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">
+                            <div class="mobile_box">
+                                <div class="img_box" style="background-image: url(img/national_mobile.png);"></div>
+                                <div class="frame"></div>
+                            </div>
+                        </a>
+                    </div> <!-- mockup_wrap -->
+                </div> <!-- inner -->
+            </section>
+
+            <section id="portfolio3" class="portfolio_group section" data-tooltip="Clone Coding">
+                <div class="text_box">
+                    <h1 class="title">Clone Coding</h1>
+                    <p class="txt">&#8251;원본 사이트와 동일하게 모작하였습니다.</p>
+                </div>
+                <div class="inner">
+                    <div class="content_box">
+                        <h2 class="name"><i class="fa-solid fa-square-check" style="color: #1aa56d;"></i>샐러디 / Responsive Web</h2>
+                        <div class="mockup_wrap salady_mockup">
+                            
+                            <a href="https://jininono.github.io/SaladyClone/" target="_blank">
+                                <div class="desktop_box">
+                                    <div class="img_box" style="background-image: url(img/salady_desktop.png); transition: background-position 1s;"></div>
+                                    <div class="frame"></div>
+                                </div>
+                            </a>
+                            <a href="#portfolio3" onClick="javascript:window.open('https://jininono.github.io/SaladyClone/','popup','width=400, height=700, top=100, left=100, scrollbars=no, resizable=no')">
+                                <div class="mobile_box">
+                                    <div class="img_box" style="background-image: url(img/salady_mobile.png); transition: background-position 2s;"></div>
+                                    <div class="frame"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content_box">
+                        <h2 class="name"><i class="fa-solid fa-square-check" style="color: #916a43;"></i>소소문구 / Fullpage Web</h2>
+                        <div class="mockup_wrap sosomoongoo_mockup">
+                            <a href="https://jininono.github.io/SosomoongooClone/" target="_blank">
+                                <div class="desktop_box">
+                                    <div class="img_box" style="background-image: url(img/sosomoongoo_desktop.png);"></div>
+                                    <div class="frame"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content_box">
+                        <h2 class="name"><i class="fa-solid fa-square-check" style="color: #1c9b97;"></i>하나은행 / Fullpage Web</h2>
+                        <div class="mockup_wrap hanabank_mockup">
+                            <a href="https://jininono.github.io/HanabankClone/" target="_blank">
+                                <div class="desktop_box">
+                                    <div class="img_box" style="background-image: url(img/hanabank_desktop.png); transition: background-position 1s;" ></div>
+                                    <div class="frame"></div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div id="footer"></div>
-            </div>        
-        </section>
+            </section>
 
+            <section id="contact" class="section" data-tooltip="Contact">
+                <div class="contact_inner">
+                    <div class="text_wrap">
+                        <h1 class="title">Contact</h1>
+                        <div class="text_box">
+                            <p>저의 포트폴리오를 끝까지 봐주셔서 감사합니다.</p>
+                            <p>저에게 궁금한 점이 있으시다면 연락주시길 바랍니다.</p>
+                        </div>
+                    </div>
+                    <div class="contact_wrap">
+                        <div class="left_wrap">
+                            <ul class="profile_list">
+                                <li>
+                                    <p class="title">Name</p>
+                                    <p>노혜진 / Hyejin. No</p>
+                                </li>
+                                <li>
+                                    <p class="title">Email</p>
+                                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jininono96@gmail.com" onClick="window.open(this.href, '', 'width=800, height=600'); return false;">jininono96@gmail.com</a>
+                                </li>
+                                <li>
+                                    <p class="title">Phone</p>
+                                    <p>010.4099.2269</p>
+                                </li>
+                                <li>
+                                    <p class="title">Social</p>
+                                    <a href="https://github.com/jininono" target="_blank"><span><img src="img/github.svg"></span>
+                                    <a href="https://open.kakao.com/o/s0Y9jt5e" target="_blank"><span><img src="img/talk.svg"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right_wrap">
+                            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxUdVwY-vDzhdIPZozRx5kkNcMkYFYTEjwIoxFeS_48857awEeRcsIWZK0DP0m4fUHQ/exec" id="contact_form" data-email="jininono96@gmail.com" target="frAttachFiles">
+                                <div class="row">
+                                    <div class="thankyou_message">
+                                        <p>메일 전송에 성공하였습니다. 확인 후 회신드리겠습니다.</p>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" name="name" placeholder="Name" required>
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="form_box2">
+                                        <textarea name="message" placeholder="저에게 궁금한 점이 있으시면 언제든지 문의해 주세요." required></textarea>
+                                    </div>
+                                    <div class="form_box3">
+                                        <input type="submit" value="Send Message">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <p>Copyright &copy; 2023. Hyejin No All rights reserved.</p>
+                    </div> 
+                </div> <!-- contact_inner -->
+            </div> <!-- fullpage -->
+        </section>
     </div> <!-- wrapper -->
 
-    <!-- form -->
-    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
-
-    <!-- aos -->
-    <script>
-        AOS.init({
-            once: true,
-        });
-        $(window).on('load', function () {
-            AOS.refresh();
-        });
-    </script>
 </body>
 </html>

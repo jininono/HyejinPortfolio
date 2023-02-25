@@ -1,0 +1,158 @@
+@media all and (max-width: 1279px) {
+
+    html {
+        font-size: 9px;
+    }
+
+    /*wave_box*/
+    .wave {
+        opacity: .4;
+        position: absolute;
+        top: -20%;
+        right: -10%;
+        background: #86E5FF;
+        width: 40rem;
+        height: 40rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+    }
+    
+    .wave2 {
+        opacity: .4;
+        position: absolute;
+        top: 15%;
+        left: -10%;
+        background: #C1AEFC;
+        width: 30rem;
+        height: 30rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+    }
+    
+    .wave3 {
+        opacity: .4;
+        position: absolute;
+        bottom: 7%;
+        right: 15%;
+        background: #FFA1CF;
+        width: 20rem;
+        height: 20rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+    }
+
+    /*about*/
+    #about .left_wrap {
+        margin-right: 15rem;
+    }
+
+    #about .left_wrap img {
+        width: 270px;
+        height: auto;
+    }
+      
+    #about .left_wrap .text_wrap {
+        width: 270px;
+        height: auto;
+        padding: 0 10%;
+    }
+    
+    #about .right_wrap .title {
+        font-size: 3.4rem;
+    }
+
+    #about .right_wrap .title {
+        padding-top: 5rem;
+    }
+
+    /*abillty*/  
+    #abillty .abillty_wrap .abillty_box .inner {
+        padding-left: 2.5vw;
+    }
+    
+    #abillty .abillty_wrap .abillty_box .inner .img_box img {
+        width: 6.5rem;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    #abillty .abillty_wrap .abillty_box .inner .img_box .arrow {
+        width: 8rem;
+        position: absolute;
+        top: 62%;
+        left: 3%;
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: #333;
+        text-align: center;
+        padding: .5rem 0;
+        border-radius: 5px; 
+        opacity: 0; 
+        transition: all .5s;            
+        visibility: hidden;  
+    }
+    
+    .arrow:after {
+        content : '';            
+        position: absolute;      
+        background-color: #333;
+        width : 7px;
+        height: 7px;
+        transform: rotate(135deg) translateX(-50%);  
+        bottom: 18px;
+        left: 40%;                                 
+    }
+    
+    #abillty .abillty_wrap .abillty_box .inner .text_box {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    #abillty .abillty_wrap .abillty_box .inner ul li span {
+        padding-right: 2rem;
+        font-weight: 600;
+    }
+    
+    #abillty .abillty_wrap .abillty_box .inner .txt {
+        display: inline-block;
+        width: 7rem;
+        padding-right: 0;
+    }
+
+    /* portfolio2 */
+    #portfolio2 .inner .hover_box {
+    right: -15%;
+    top: 8%;
+    }
+
+    /* portfolio3 */
+    #portfolio3 .text_box {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    #portfolio3 .inner {
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    }
+    
+    #portfolio3 .inner .content_box .name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    }
+
+}

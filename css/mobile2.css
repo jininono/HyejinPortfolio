@@ -1,0 +1,266 @@
+@media all and (max-width: 560px) {
+
+    header .logo a {
+        font-size: 24px;
+        font-family: 'Mali', cursive;
+        font-style: italic;
+    }
+
+    /*sidebar*/
+    #sidebar {
+        display: block;
+        position: fixed;
+        top: 0px;
+        right: -60vw;
+        width: 60vw;
+        height: 100%;
+        background: #e3dffd;
+        z-index: 50;
+        transition: all 0.3s;
+    }
+
+    .sidebar_inner .close {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    /*wave_box*/
+    .wave {
+        opacity: .4;
+        position: absolute;
+        top: -20%;
+        right: -10%;
+        background: #86E5FF;
+        width: 35rem;
+        height: 35rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+    }
+
+    .wave2 {
+        opacity: .4;
+        position: absolute;
+        top: 30%;
+        left: -10%;
+        background: #C1AEFC;
+        width: 25rem;
+        height: 25rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+        z-index: -1;
+    }
+
+    .wave3 {
+        opacity: .4;
+        position: absolute;
+        bottom: 15%;
+        right: 20%;
+        background: #FFA1CF;
+        width: 15rem;
+        height: 15rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+        z-index: -1;
+    }
+
+    /* about */
+    #about .right_wrap .text_wrap {
+        width: 335px;
+        height: auto;
+        font-size: 12px;
+        line-height: 1.8;
+        padding-top: 0;
+    }
+
+    /* abillty */
+    #abillty .abillty_wrap .inner .img_box {
+        display: none;
+    }
+
+    #abillty .abillty_wrap .abillty_box .inner .title_mo {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    #abillty .abillty_wrap .abillty_box .inner .text_box.no_1 {
+        position: absolute;
+        left: 10%;
+        top: 60%;
+    }
+
+    #abillty .abillty_wrap .abillty_box .inner .text_box.no_2 {
+        position: absolute;
+        left: 15%;
+        top: 60%;
+    }
+
+    #abillty .abillty_wrap .abillty_box .inner .text_box.no_3 {
+        position: absolute;
+        left: 27%;
+        top: 60%;
+    }
+
+    #abillty .abillty_wrap .abillty_box .inner .text_box.no_4 {
+        position: absolute;
+        left: 20%;
+        top: 60%;
+    }
+
+    #abillty .abillty_wrap .abillty_box .inner .graph {
+        display: inline-block;
+        width: 55vw;
+        height: 3rem;
+        background-color: #e5e5e5;
+        border-radius: 40px;
+    }
+
+    /*portfolio / redesign_group*/
+    .redesign_group .inner .mockup_wrap {
+        width: 250px;
+    }
+
+    .redesign_group .inner .text_wrap {
+        padding-bottom: 0;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .redesign_group .inner .text_wrap .title_box {
+        padding-right: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .redesign_group .inner .link {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .redesign_group .inner .link a:nth-of-type(2) {
+        margin-right: 0;
+    }
+
+    /*redesign_group 공통*/
+
+    /*portfolio3 Clone Coding*/
+    #portfolio3 .text_box {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px 0 50px 0;
+    }
+
+    #portfolio3 .inner .content_box {
+        margin-bottom: 70px;
+    }
+
+    #portfolio3 .inner .content_box .name {
+        font-size: calc(0.31vw + 10.84px);
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    #portfolio3 .inner .content_box .mockup_wrap {
+        width: 250px;
+    }
+
+    /*contact*/
+    #contact {
+        width: 100%;
+        margin-top: 90%;
+        /* portfolio 높이 값 */
+    }
+
+    #contact .contact_inner {
+        width: 100%;
+        height: 130vh;
+        padding-top: 12vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #contact .contact_inner .left_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 77vw;
+        height: 20vh;
+        background-color: #e3dffd;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #contact .left_wrap .profile_list {
+        width: 70vw;
+        height: 15vh;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 5%;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #contact .right_wrap .row {
+        width: 77vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contact .right_wrap .row .form_box {
+        width: 65vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #contact .right_wrap .row .form_box3 {
+        padding-bottom: 4%;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        /*-webkit-appearance: none;*/
+        display: block;
+        background: #fff;
+        border: solid 1px #e3dffd;
+        border-radius: 5px;
+        width: 65vw;
+        line-height: 10px;
+        padding: 10px;
+        font-size: calc(0.51vw + 8.09px);
+    }
+
+    form textarea {
+        width: 65vw;
+        height: 30vh;
+        line-height: 1.8;
+    }
+
+}

@@ -1,0 +1,473 @@
+@media all and (max-width: 767px) {
+
+    html {
+        font-size: 7px;
+    }
+
+    header .logo a {
+        font-size: 26px;
+        font-family: 'Mali', cursive;
+        font-style: italic;
+    }
+
+    /*sidebar*/
+    .sidebar_inner .close {
+        position: absolute;
+        top: 22px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #sidebar_gnb>li>a {
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -.5px;
+    }
+
+    /*home*/
+    #home {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    #home .text_wrap {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+
+    #home .text_wrap .txt {
+        font-size: calc(3.06vw + 8.52px);
+        font-family: 'Caveat', cursive;
+    }
+
+    #home .text_wrap .title {
+        font-size: calc(7.14vw + 15.21px);
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        margin-left: -4px;
+        /*텍스트 여백 없애기*/
+    }
+
+    /*wave_box*/
+    .wave {
+        opacity: .4;
+        position: absolute;
+        top: -20%;
+        right: -10%;
+        background: #86E5FF;
+        width: 40rem;
+        height: 40rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+    }
+
+    .wave2 {
+        opacity: .4;
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        background: #C1AEFC;
+        width: 30rem;
+        height: 30rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+        z-index: -1;
+    }
+
+    .wave3 {
+        opacity: .4;
+        position: absolute;
+        bottom: 10%;
+        right: 20%;
+        background: #FFA1CF;
+        width: 20rem;
+        height: 20rem;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 4s infinite linear;
+        z-index: -1;
+    }
+
+    /*about*/
+    #about {
+        width: 100%;
+        height: 100vh;
+        padding-top: 25vh;
+        background: #F5F5F5;
+    }
+
+    #about .about_content {
+        height: 50vh;
+        display: block;
+    }
+
+    #about .left_wrap {
+        display: none;
+    }
+
+    #about .resume_btn {
+        width: auto;
+        text-align: center;
+        display: inline-block;
+        font-size: calc(0.51vw + 8.09px);
+        font-weight: 500;
+        color: #fff;
+        background: #111;
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-top: 0;
+    }
+
+    #about .right_wrap {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #about .right_wrap .title {
+        font-size: calc(2.04vw + 12.35px);
+        font-weight: 500;
+        color: #111;
+        padding-top: 0;
+    }
+
+    #about .right_wrap .text_wrap {
+        width: 390px;
+        height: auto;
+        font-size: 14px;
+        line-height: 1.8;
+        padding-top: 0;
+    }
+
+    #about .right_wrap .text_wrap p:nth-of-type(2) {
+        padding: 0;
+    }
+
+    #about .right_wrap .resume_btn_wrap.pc {
+        display: block;
+    }
+
+    /* abillty */
+    #abillty .abillty_wrap .inner .img_box {
+        cursor: default;
+    }
+
+    #abillty .abillty_wrap .abillty_box .inner .img_box .arrow {
+        display: none;
+    }
+
+    #abillty .abillty_wrap .abillty_box .inner .graph {
+        display: inline-block;
+        width: 30vw;
+        height: 3rem;
+        background-color: #e5e5e5;
+        border-radius: 40px;
+    }
+
+    /*portfolio / redesign_group*/
+    .redesign_group {
+        width: 100%;
+        height: 100vh;
+        padding-top: 15vh;
+        margin-top: 0vh;
+    }
+
+    .redesign_group .inner {
+        width: 70vw;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    #portfolio2 .inner {
+        flex-direction: column-reverse;
+    }
+
+    .redesign_group .inner .mockup_wrap {
+        width: 52vw;
+    }
+
+    .redesign_group .inner .left_wrap {
+        margin-right: 0;
+    }
+
+    /*redesign_group 공통*/
+    .redesign_group .inner .desktop_box .hover_box {
+        display: none;
+    }
+
+    .redesign_group .inner .text_wrap {
+        padding-bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .redesign_group .inner .text_wrap .title_box {
+        padding-right: 7%;
+    }
+
+    .redesign_group .inner .text_wrap .title_box .redesign {
+        font-size: calc(1.02vw + 18.17px);
+        font-family: 'Caveat', cursive;
+    }
+
+    .redesign_group .inner .text_wrap .title_box .title {
+        font-size: calc(1.02vw + 20.17px);
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+
+    .redesign_group .inner .text_wrap .title_box .txt {
+        font-size: calc(0.51vw + 10.09px);
+    }
+
+    .redesign_group .inner .text_wrap .title_box .txt i {
+        padding: 0 5px 0 1px;
+    }
+
+    .redesign_group .inner .text_wrap .text_box {
+        padding: 0;
+    }
+
+    .redesign_group .inner .text_wrap .text_box .title {
+        display: inline-block;
+        width: 8rem;
+        font-size: calc(0.51vw + 10.09px);
+        font-weight: 500;
+    }
+
+    .redesign_group .inner .text_wrap .text_box .txt {
+        font-size: calc(0.51vw + 8.09px);
+    }
+
+    .redesign_group .inner .text_wrap .text_box .color_icon i {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        text-indent: -9999px;
+    }
+
+    .redesign_group .inner .text_wrap .text_box .color_icon i:nth-of-type(2) {
+        margin: 0 5px;
+    }
+
+    .redesign_group .inner .link {
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .redesign_group .inner .link a {
+        width: 8rem;
+        padding: .5rem 0;
+        border: 1px solid #333;
+        background-color: #333;
+        color: #fff;
+        font-size: calc(0.51vw + 8.09px);
+        display: inline-block;
+        transition: all .3s;
+        border-radius: 5px;
+        margin-right: 2rem;
+    }
+
+    /*redesign_group 공통*/
+
+    /*portfolio3 Clone Coding*/
+    #portfolio3 .text_box {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px 0 50px 0;
+    }
+
+    #portfolio3 .inner .content_box {
+        margin-bottom: 70px;
+    }
+
+    #portfolio3 .inner .content_box .name {
+        font-size: calc(0.31vw + 10.84px);
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    #portfolio3 .inner .content_box .mockup_wrap {
+        width: 52vw;
+    }
+
+    /*contact*/
+    #contact {
+        width: 100%;
+        margin-top: 100%;
+        /* portfolio 높이 값 */
+    }
+
+    #contact .contact_inner {
+        width: 100%;
+        height: 145vh;
+        padding-top: 12vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #contact .contact_inner .text_box p {
+        font-size: calc(0.51vw + 8.09px);
+        padding-bottom: 3px;
+    }
+
+    #contact .contact_inner .contact_wrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 0%;
+    }
+
+    #contact .contact_inner .left_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75vw;
+        height: 22vh;
+        background-color: #e3dffd;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #contact .left_wrap .profile_list {
+        width: 70vw;
+        height: 17vh;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 5%;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #contact .left_wrap .profile_list li {
+        width: 50%;
+        font-size: 10px;
+        padding-bottom: 0px;
+    }
+
+    #contact .left_wrap .profile_list .title {
+        font-size: calc(0.51vw + 8.09px);
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    #contact .left_wrap .profile_list img {
+        width: 10px;
+        margin: 0 3px;
+    }
+
+    #contact .right_wrap {
+        background-color: #F5F5F5;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #contact .right_wrap .row {
+        width: 75vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contact .right_wrap .thankyou_message {
+        font-weight: 400;
+        font-size: calc(0.51vw + 8.09px);
+        text-align: center;
+        visibility: hidden;
+        padding: 3% 0;
+    }
+
+    #contact .right_wrap .row .form_box {
+        width: 64vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #contact .right_wrap .row .form_box2 {
+        padding: 3% 0;
+    }
+
+    #contact .right_wrap .row .form_box3 {
+        padding-bottom: 3%;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        /*-webkit-appearance: none;*/
+        display: block;
+        background: #fff;
+        border: solid 1px #e3dffd;
+        border-radius: 5px;
+        width: 64vw;
+        line-height: 10px;
+        padding: 10px;
+        font-size: calc(0.51vw + 8.09px);
+    }
+
+    form input[type="text"] {
+        margin-bottom: 3%;
+    }
+
+    form textarea {
+        width: 64vw;
+        height: 35vh;
+        line-height: 1.8;
+    }
+
+    input[type="submit"] {
+        transition: all .3s;
+        color: #3f3f3f;
+        background: #fff;
+        text-decoration: none;
+        border: solid 1px #e3dffd;
+        border-radius: 30px;
+        padding: 10px 25px;
+        cursor: pointer;
+        outline: 0;
+        font-size: calc(0.51vw + 8.09px);
+    }
+
+    #footer {
+        height: 8vh;
+        line-height: 8vh;
+        background-color: #e3dffd;
+        text-align: center;
+        font-size: 10px;
+    }
+
+}
