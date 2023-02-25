@@ -131,6 +131,17 @@
         width: 250px;
     }
 
+    .redesign_group .inner {
+        width: 70vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
     .redesign_group .inner .text_wrap {
         padding-bottom: 0;
         width: 250px;
