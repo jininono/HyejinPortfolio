@@ -298,12 +298,12 @@ header #gnb > li > a.active-color {
 }
 
 #about .left_wrap img {
-  width: 280px;
+  width: 28rem;
   height: auto;
 }
 
 #about .left_wrap .text_wrap {
-  width: 280px;
+  width: 28rem;
   height: auto;
   padding: 0 7%;
   display: flex;
@@ -578,7 +578,7 @@ header #gnb > li > a.active-color {
   overflow: hidden;
   background-size: 100% auto;
   background-position: 0 0;
-  transition: background-position 5s;
+  transition: background-position 7s;
 }
 
 .portfolio_group .inner .mobile_box:hover .img_box {
@@ -594,6 +594,10 @@ header #gnb > li > a.active-color {
   height: 72%;
   border-radius: 2%;
   top: 2%;
+}
+
+.portfolio_group .inner .desktop_box:hover .img_box {
+   background-position: 0 100%;
 }
 
 .portfolio_group .inner .desktop_box .frame {
@@ -954,6 +958,7 @@ form textarea {
   line-height: 1rem;
   padding: 1rem;
   font-size: 1.4rem;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 form textarea {

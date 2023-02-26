@@ -188,7 +188,7 @@
 
     .redesign_group .inner {
         width: 70vw;
-        height: 75vh;
+        height: 65vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -318,13 +318,13 @@
     /*contact*/
     #contact {
         width: 100%;
-        margin-top: 100%;
+        margin-top: 70%;
         /* portfolio 높이 값 */
     }
 
     #contact .contact_inner {
         width: 100%;
-        height: 145vh;
+        height: 110vh;
         padding-top: 12vh;
         display: flex;
         flex-direction: column;
@@ -348,7 +348,7 @@
         justify-content: center;
         align-items: center;
         width: 75vw;
-        height: 22vh;
+        height: 20vh;
         background-color: #e3dffd;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -357,7 +357,7 @@
 
     #contact .left_wrap .profile_list {
         width: 70vw;
-        height: 17vh;
+        height: 15vh;
         background: #fff;
         display: flex;
         flex-direction: row;
@@ -395,7 +395,7 @@
 
     #contact .right_wrap .row {
         width: 75vw;
-        height: 70vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -445,7 +445,7 @@
 
     form textarea {
         width: 64vw;
-        height: 35vh;
+        height: 25vh;
         line-height: 1.8;
     }
 
