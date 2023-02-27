@@ -141,18 +141,12 @@
     }
     
     #portfolio3 .inner {
-    height: 60vh;
+    height: 65vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    }
-    
-    #portfolio3 .inner .content_box .name {
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 25px;
     }
 
 }

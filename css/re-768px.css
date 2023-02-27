@@ -31,9 +31,7 @@
 
     /*home*/
     #home {
-        width: 100%;
-        height: 100vh;
-        position: relative;
+        height: calc(var(--var, 1vh) * 100);
     }
 
     #home .text_wrap {
@@ -100,10 +98,8 @@
 
     /*about*/
     #about {
-        width: 100%;
-        height: 100vh;
+        height: calc(var(--var, 1vh) * 100);
         padding-top: 25vh;
-        background: #F5F5F5;
     }
 
     #about .about_content {
@@ -162,6 +158,10 @@
     }
 
     /* abillty */
+    #abillty {
+        height: calc(var(--var, 1vh) * 160);
+    }
+
     #abillty .abillty_wrap .inner .img_box {
         cursor: default;
     }
@@ -181,17 +181,15 @@
     /*portfolio / redesign_group*/
     .redesign_group {
         width: 100%;
-        height: 100vh;
+        height: calc(var(--var, 1vh) * 100);
         padding-top: 15vh;
-        margin-top: 0vh;
     }
 
     .redesign_group .inner {
-        width: 70vw;
-        height: 65vh;
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         position: relative;
@@ -201,24 +199,21 @@
         flex-direction: column-reverse;
     }
 
-    .redesign_group .inner .mockup_wrap {
-        width: 52vw;
-    }
-
     .redesign_group .inner .left_wrap {
         margin-right: 0;
     }
 
-    /*redesign_group 공통*/
     .redesign_group .inner .desktop_box .hover_box {
         display: none;
     }
 
     .redesign_group .inner .text_wrap {
         padding-bottom: 0;
-        width: 100%;
+        width: 70vw;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 15%;
     }
 
     .redesign_group .inner .text_wrap .title_box {
@@ -277,20 +272,14 @@
         text-align: center;
     }
 
-    .redesign_group .inner .link a {
-        width: 8rem;
-        padding: .5rem 0;
-        border: 1px solid #333;
-        background-color: #333;
-        color: #fff;
-        font-size: calc(0.51vw + 8.09px);
-        display: inline-block;
-        transition: all .3s;
-        border-radius: 5px;
-        margin-right: 2rem;
+    .redesign_group .inner .link .link_pc {
+        display: none;
     }
 
-    /*redesign_group 공통*/
+    .redesign_group .inner .link a {
+        font-size: calc(0.51vw + 8.09px);
+        margin-right: 0;
+    }
 
     /*portfolio3 Clone Coding*/
     #portfolio3 .text_box {
@@ -301,31 +290,30 @@
         margin: 15px 0 50px 0;
     }
 
+    #portfolio3 .inner {
+        width: 300px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
     #portfolio3 .inner .content_box {
         margin-bottom: 70px;
     }
 
-    #portfolio3 .inner .content_box .name {
-        font-size: calc(0.31vw + 10.84px);
-        font-weight: 500;
-        margin-bottom: 25px;
-    }
-
+    .redesign_group .inner .mockup_wrap,
     #portfolio3 .inner .content_box .mockup_wrap {
-        width: 52vw;
+        width: 300px;
     }
 
     /*contact*/
-    #contact {
-        width: 100%;
-        margin-top: 70%;
-        /* portfolio 높이 값 */
-    }
-
     #contact .contact_inner {
         width: 100%;
-        height: 110vh;
-        padding-top: 12vh;
+        height: calc(var(--var, 1vh) * 130);
+        padding-top: 0vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -395,7 +383,7 @@
 
     #contact .right_wrap .row {
         width: 75vw;
-        height: 50vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -445,7 +433,7 @@
 
     form textarea {
         width: 64vw;
-        height: 25vh;
+        height: 30vh;
         line-height: 1.8;
     }
 

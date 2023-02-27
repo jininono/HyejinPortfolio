@@ -302,21 +302,21 @@
         background-color: #333;
         text-align: center;
         padding: .5rem 0;
-        border-radius: 5px; 
-        opacity: 0; 
-        transition: all .5s;            
-        visibility: hidden;  
+        border-radius: 5px;
+        opacity: 0;
+        transition: all .5s;
+        visibility: hidden;
     }
-    
+
     .arrow:after {
-        content : '';            
-        position: absolute;      
+        content: '';
+        position: absolute;
         background-color: #333;
-        width : 7px;
+        width: 7px;
         height: 7px;
-        transform: rotate(135deg) translateX(-50%);  
+        transform: rotate(135deg) translateX(-50%);
         bottom: 16px;
-        left: 40%;                                 
+        left: 40%;
     }
 
     #abillty .abillty_wrap .abillty_box .inner .text_box {
@@ -344,7 +344,6 @@
         width: 100%;
         height: 100vh;
         padding-top: 10vh;
-        margin-top: 0vh; /* 넘친만큼 */
     }
 
     .redesign_group .inner {
@@ -382,7 +381,7 @@
     .redesign_group .inner .text_wrap {
         padding-bottom: 7rem;
     }
-    
+
     .redesign_group .inner .text_wrap .title_box .redesign {
         font-size: calc(1.57vw + 9.95px);
         font-family: 'Caveat', cursive;
@@ -411,12 +410,12 @@
 
     #portfolio .inner .hover_box {
         left: -15%;
-        top: -5%;
+        top: -15%;
     }
 
     #portfolio2 .inner .hover_box {
         right: -15%;
-        top: -5%;
+        top: -15%;
     }
 
     #portfolio2 {
@@ -425,6 +424,13 @@
     }
 
     /*portfolio3 Clone Coding*/
+    #portfolio3 {
+        width: 100%;
+        height: auto;
+        padding-top: 10vh;
+        text-align: center;
+    }
+
     #portfolio3 .text_box {
         height: auto;
         display: flex;
@@ -445,7 +451,7 @@
     }
 
     #portfolio3 .inner {
-        width: 70vw;
+        width: 360px;
         height: auto;
         display: flex;
         justify-content: center;
@@ -461,22 +467,31 @@
     #portfolio3 .inner .content_box .name {
         font-size: calc(0.31vw + 10.84px);
         font-weight: 500;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
+    }
+
+    #portfolio3 .inner .content_box .txt {
+        font-size: calc(0.31vw + 8.84px);
+        margin-bottom: 5.5rem;
     }
 
     #portfolio3 .inner .content_box .name i {
         padding-right: 5px;
     }
 
+    .redesign_group .inner .mockup_wrap,
     #portfolio3 .inner .content_box .mockup_wrap {
-        width: 40vw;
+        width: 360px;
     }
 
     /*contact*/
-    #contact {
+    #contact .contact_inner {
         width: 100%;
-        margin-top: 70%;
-        /* portfolio 높이 값 */
+        height: 100vh;
+        padding-top: 0vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     #contact .contact_inner .text_wrap .title {

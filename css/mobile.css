@@ -72,7 +72,7 @@
 
     /* about */
     #about .right_wrap .text_wrap {
-        width: 335px;
+        width: 332px;
         height: auto;
         font-size: 12px;
         line-height: 1.8;
@@ -127,16 +127,18 @@
     }
 
     /*portfolio / redesign_group*/
-    .redesign_group .inner .mockup_wrap {
-        width: 250px;
+    .redesign_group .inner {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
     }
 
     .redesign_group .inner .text_wrap {
-        padding-bottom: 0;
-        width: 250px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        padding-top: 20%;
     }
 
     .redesign_group .inner .text_wrap .title_box {
@@ -171,27 +173,17 @@
         margin-bottom: 70px;
     }
 
-    #portfolio3 .inner .content_box .name {
-        font-size: calc(0.31vw + 10.84px);
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
-
+    .redesign_group .inner .mockup_wrap,
+    .redesign_group .inner .text_wrap,
+    #portfolio3 .inner,
     #portfolio3 .inner .content_box .mockup_wrap {
-        width: 250px;
+        width: 260px;
     }
 
     /*contact*/
-    #contact {
-        width: 100%;
-        margin-top: 70%;
-        /* portfolio 높이 값 */
-    }
-
     #contact .contact_inner {
         width: 100%;
-        height: 110vh;
-        padding-top: 12vh;
+        height: calc(var(--var, 1vh) * 90);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -201,8 +193,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 88vw;
-        height: 20vh;
+        width: 80vw;
+        height: 15vh;
         background-color: #e3dffd;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -210,8 +202,8 @@
     }
 
     #contact .left_wrap .profile_list {
-        width: 80vw;
-        height: 15vh;
+        width: 74vw;
+        height: 12vh;
         background: #fff;
         display: flex;
         flex-direction: row;
@@ -224,8 +216,8 @@
     }
 
     #contact .right_wrap .row {
-        width: 88vw;
-        height: 45vh;
+        width: 80vw;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -233,7 +225,7 @@
     }
 
     #contact .right_wrap .row .form_box {
-        width: 75vw;
+        width: 72vw;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -251,134 +243,100 @@
         background: #fff;
         border: solid 1px #e3dffd;
         border-radius: 5px;
-        width: 75vw;
+        width: 72vw;
         line-height: 10px;
         padding: 10px;
         font-size: calc(0.51vw + 8.09px);
     }
 
     form textarea {
-        width: 75vw;
-        height: 20vh;
+        width: 72vw;
+        height: 21vh;
         line-height: 1.8;
     }
 
     /*max-width: 375px*/
     @media all and (max-width: 375px) {
 
-          /* about */
-    #about .right_wrap .text_wrap {
-        width: 85vw;
-        height: auto;
-        font-size: 12px;
-        line-height: 1.8;
-        padding-top: 0;
-    }
+        /* about */
+        #about .right_wrap .text_wrap {
+            width: 85vw;
+            height: auto;
+            font-size: 12px;
+            line-height: 1.8;
+            padding-top: 0;
+        }
 
-    /*portfolio*/
-    .redesign_group .inner {
-        width: 70vw;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        position: relative;
-    }
+        /*portfolio*/
+        .redesign_group .inner .mockup_wrap,
+        .redesign_group .inner .text_wrap,
+        #portfolio3 .inner,
+        #portfolio3 .inner .content_box .mockup_wrap {
+            width: 240px;
+        }
 
-    .redesign_group .inner .mockup_wrap {
-        width: 70vw;
-    }
+        /*contact*/
+        #contact .contact_inner {
+            width: 100%;
+            height: calc(var(--var, 1vh) * 100);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-    .redesign_group .inner .text_wrap {
-        padding-bottom: 0;
-        width: 70vw;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+        #contact .contact_inner .left_wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 88vw;
+            height: 20vh;
+            background-color: #e3dffd;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 0px;
+        }
 
-    #portfolio3 .inner .content_box .mockup_wrap {
-        width: 70vw;
-    }
+        #contact .left_wrap .profile_list {
+            width: 80vw;
+            height: 15vh;
+            background: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 5%;
+            border-radius: 5px;
+            text-align: center;
+        }
 
-    /*contact*/
-    #contact {
-        width: 100%;
-        margin-top: 60vh;
-        /* portfolio 높이 값 */
-    }
+        #contact .right_wrap .row {
+            width: 88vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    #contact .contact_inner {
-        width: 100%;
-        height: 110vh;
-        padding-top: 12vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+        #contact .right_wrap .row .form_box {
+            width: 75vw;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
-    #contact .contact_inner .left_wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 88vw;
-        height: 20vh;
-        background-color: #e3dffd;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        border-bottom-left-radius: 0px;
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            /*-webkit-appearance: none;*/
+            display: block;
+            background: #fff;
+            border: solid 1px #e3dffd;
+            border-radius: 5px;
+            width: 75vw;
+            line-height: 10px;
+            padding: 10px;
+            font-size: calc(0.51vw + 8.09px);
+        }
     }
-
-    #contact .left_wrap .profile_list {
-        width: 80vw;
-        height: 15vh;
-        background: #fff;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0 5%;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    #contact .right_wrap .row {
-        width: 88vw;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #contact .right_wrap .row .form_box {
-        width: 75vw;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
-        /*-webkit-appearance: none;*/
-        display: block;
-        background: #fff;
-        border: solid 1px #e3dffd;
-        border-radius: 5px;
-        width: 75vw;
-        line-height: 10px;
-        padding: 10px;
-        font-size: calc(0.51vw + 8.09px);
-    }
-
-    form textarea {
-        width: 75vw;
-        height: 20vh;
-        line-height: 1.8;
-    }
-
-}
