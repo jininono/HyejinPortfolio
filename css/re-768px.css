@@ -31,6 +31,7 @@
 
     /*home*/
     #home {
+        height: 100vh;
         height: calc(var(--var, 1vh) * 100);
     }
 
@@ -98,6 +99,7 @@
 
     /*about*/
     #about {
+        height: 100vh;
         height: calc(var(--var, 1vh) * 100);
         padding-top: 25vh;
     }
@@ -159,6 +161,7 @@
 
     /* abillty */
     #abillty {
+        height: 160vh;
         height: calc(var(--var, 1vh) * 160);
     }
 
@@ -181,6 +184,7 @@
     /*portfolio / redesign_group*/
     .redesign_group {
         width: 100%;
+        height: 100vh;
         height: calc(var(--var, 1vh) * 100);
         padding-top: 15vh;
     }
@@ -312,6 +316,7 @@
     /*contact*/
     #contact .contact_inner {
         width: 100%;
+        height: 130vh;
         height: calc(var(--var, 1vh) * 130);
         padding-top: 0vh;
         display: flex;
