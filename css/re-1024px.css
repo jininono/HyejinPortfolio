@@ -4,6 +4,11 @@
         font-size: 8px;
     }
 
+    /* gnb_scroll */
+    #gnb_scroll {
+       display: none;
+    }
+
     /* header */
     header .inner {
         justify-content: center;
@@ -275,12 +280,12 @@
         position: relative;
     }
 
-    #abillty .abillty_wrap .abillty_box:nth-of-type(3) {
+    #abillty .abillty_wrap .abillty_box:nth-of-type(1) {
         background-color: #fff;
     }
 
-    #abillty .abillty_wrap .abillty_box:nth-of-type(4) {
-        background-color: #F5F5F5;
+    #abillty .abillty_wrap .abillty_box:nth-of-type(2) {
+        background-color: #e3dffd;
     }
 
     #abillty .abillty_wrap .abillty_box .inner .img_box img {

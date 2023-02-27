@@ -2,6 +2,8 @@ $(function () {
 
 	var siedbarClose = $(".sidebar_inner .close");
 	var siedbarGnb = $("#sidebar_gnb > li > a");
+	var gnbA = $('header #gnb>li>a');
+	var gnbScroll = $('#gnb_scroll li a');
 
 	//siedbar
 	$("#sidebar_bg").css("display", "none");
@@ -25,23 +27,6 @@ $(function () {
 		$("#sidebar").removeClass("on");
 	});
 
-	//gnb 클릭 시 이동
-	// $('.gnb_a').on('click',function(e){
-
-	// 	//URL에 #id 표시되지 않도록
-	// 	e.preventDefault();
-	// 	$('html,body').animate({scrollTop:$(this.hash).offset().top},1000,'swing');
-
-	// 	if($(this).hasClass('active-color')==true){ 
-	// 		$(this).removeClass('active-color');
-
-	// 	}else{
-	// 		$('.gnb_a').removeClass('active-color');
-	// 		$(this).addClass('active-color');
-	// 	}
-
-	// });
-
 	function vh(v) {
 		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 		return (v * h) / 100;
@@ -53,15 +38,60 @@ $(function () {
 
 			var scroll = $(window).scrollTop();
 
-			if (window.innerWidth > 1279) {
+			if (window.innerWidth > 1023) {
 
-				if (scroll > 600) {
+				if (scroll > 300) {
 					$('header').css('background', '#fff');
-				}
-				else {
+				} else {
 					$('header').css('background', 'none');
 				}
 
+				if ($(window).scrollTop() <= vh(90)) {
+					gnbA.css('background', 'none');
+					bgColor('home');
+				} else {
+					bgBack('home');
+				}
+
+				if ($(window).scrollTop() > vh(90)) {
+					gnbA.css('background', 'none');
+					bgColor('about');
+				} else {
+					bgBack('about');
+				}
+
+				if ($(window).scrollTop() > vh(180)) {
+					gnbA.css('background', 'none');
+					bgColor('abillty');
+				} else {
+					bgBack('abillty');
+				}
+
+				if ($(window).scrollTop() > vh(270)) {
+					gnbA.css('background', 'none');
+					bgColor('portfolio');
+				} else {
+					bgBack('portfolio');
+				}
+
+				if ($(window).scrollTop() > vh(360)) {
+					bgColor('portfolio2');
+				} else {
+					bgBack('portfolio2');
+				}
+
+				if ($(window).scrollTop() > vh(450)) {
+					bgColor('portfolio3');
+				} else {
+					bgBack('portfolio3');
+				}
+
+				if ($(window).scrollTop() > vh(540)) {
+					gnbA.css('background', 'none');
+					bgColor('contact');
+				} else {
+					bgBack('contact');
+				}
 			} else {
 				if (scroll > 100) {
 					$('header').css('background', '#fff');
@@ -73,11 +103,33 @@ $(function () {
 		});
 	}).resize();
 
+	function bgColor(name) {
+		gnbScroll.css({
+			'background': '#ccc',
+			'width': '8px',
+			'height': '8px'
+		});
+		$('#gnb_' + name).css('background', '#e3dffd');
+		$('#gnb_scroll_' + name).css({
+			'background': '#C1AEFC',
+			'width': '12px',
+			'height': '12px'
+		});
+	}
+
+	function bgBack(name) {
+		$('#gnb_' + name).css('background', 'none');
+		$('#gnb_scroll_' + name).css({
+			'background': '#ccc',
+			'width': '8px',
+			'height': '8px'
+		});
+	}
+
 	//vh ios 버그 방지
-	const setVh = () => {
-		document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`)
-	};
+	function setVh() {
+		document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
+	}
 	window.addEventListener('resize', setVh);
 	setVh();
 });
-
