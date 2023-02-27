@@ -1,5 +1,9 @@
 @media all and (max-width: 560px) {
 
+    :root {
+        --vh: 100%;
+    }
+
     header .logo a {
         font-size: 24px;
         font-family: 'Mali', cursive;
@@ -184,7 +188,6 @@
     #contact .contact_inner {
         width: 100%;
         height: 90vh;
-        height: calc(var(--var, 1vh) * 90);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -280,7 +283,7 @@
         #contact .contact_inner {
             width: 100%;
             height: 100vh;
-            height: calc(var(--var, 1vh) * 100);
+            height: var(--vh);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
