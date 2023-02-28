@@ -646,10 +646,6 @@ header #gnb>li:hover>a {
   transition: background-position 7s;
 }
 
-/* .portfolio_group .inner .mobile_box:hover .img_box {
-  background-position: 0 100%;
-} */
-
 .portfolio_group .inner .desktop_box {
   width: 100%;
 }
@@ -660,10 +656,6 @@ header #gnb>li:hover>a {
   border-radius: 2%;
   top: 2%;
 }
-
-/* .portfolio_group .inner .desktop_box:hover .img_box {
-  background-position: 0 100%;
-} */
 
 .portfolio_group .inner .desktop_box .frame {
   padding-bottom: 82%;

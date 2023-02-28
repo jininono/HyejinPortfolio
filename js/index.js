@@ -5,7 +5,7 @@ $(function () {
 	var gnbA = $('header #gnb>li>a');
 	var gnbScroll = $('#gnb_scroll li a');
 	var imgMobile = $('.portfolio_group .inner .mobile_box');
-	var imgDesk = $('.portfolio_group .inner .desktop_box');
+	var imgDesk = $('#portfolio3 .inner .desktop_box');
 
 	//siedbar
 	$("#sidebar_bg").css("display", "none");
@@ -63,35 +63,35 @@ $(function () {
 					$('header').css('background', 'none');
 				}
 
-				if ($(window).scrollTop() <= vh(90)) {
+				if ($(window).scrollTop() < vh(81)) {
 					gnbA.css('background', 'none');
 					bgColor('home');
 				} else {
 					bgBack('home');
 				}
 
-				if ($(window).scrollTop() > vh(90)) {
+				if ($(window).scrollTop() > vh(80)) {
 					gnbA.css('background', 'none');
 					bgColor('about');
 				} else {
 					bgBack('about');
 				}
 
-				if ($(window).scrollTop() > vh(180)) {
+				if ($(window).scrollTop() > vh(160)) {
 					gnbA.css('background', 'none');
 					bgColor('abillty');
 				} else {
 					bgBack('abillty');
 				}
 
-				if ($(window).scrollTop() > vh(270)) {
+				if ($(window).scrollTop() > vh(240)) {
 					gnbA.css('background', 'none');
 					bgColor('portfolio');
 				} else {
 					bgBack('portfolio');
 				}
 
-				if ($(window).scrollTop() > vh(360)) {
+				if ($(window).scrollTop() > vh(320)) {
 					bgColor('portfolio2');
 				} else {
 					bgBack('portfolio2');
@@ -103,7 +103,7 @@ $(function () {
 					bgBack('portfolio3');
 				}
 
-				if ($(window).scrollTop() > vh(540)) {
+				if ($(window).scrollTop() > vh(550)) {
 					gnbA.css('background', 'none');
 					bgColor('contact');
 				} else {
