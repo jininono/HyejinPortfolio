@@ -4,6 +4,8 @@ $(function () {
 	var siedbarGnb = $("#sidebar_gnb > li > a");
 	var gnbA = $('header #gnb>li>a');
 	var gnbScroll = $('#gnb_scroll li a');
+	var imgMobile = $('.portfolio_group .inner .mobile_box');
+	var imgDesk = $('.portfolio_group .inner .desktop_box');
 
 	//siedbar
 	$("#sidebar_bg").css("display", "none");
@@ -27,13 +29,28 @@ $(function () {
 		$("#sidebar").removeClass("on");
 	});
 
+	//vh 계산
 	function vh(v) {
 		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 		return (v * h) / 100;
 	}
-
+	
 	$(window).resize(function () {
 
+		if (window.innerWidth > 767) {
+			
+			imgMobile.hover(function (){
+				$(this).find('.img_box').css('background-position', '0 100%');
+			}, function(){
+				$(this).find('.img_box').css('background-position', '0 0');
+			});
+			imgDesk.hover(function (){
+				$(this).find('.img_box').css('background-position', '0 100%');
+			}, function(){
+				$(this).find('.img_box').css('background-position', '0 0');
+			});
+		}
+		
 		$(window).on("scroll", function () {
 
 			var scroll = $(window).scrollTop();
@@ -92,6 +109,7 @@ $(function () {
 				} else {
 					bgBack('contact');
 				}
+				
 			} else {
 				if (scroll > 100) {
 					$('header').css('background', '#fff');

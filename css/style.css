@@ -470,7 +470,8 @@ header #gnb>li:hover>a {
 #abillty .abillty_wrap .abillty_box .inner .img_box .arrow {
   width: 8rem;
   position: absolute;
-  top: 63%;
+  top: 65%;
+  left: 10%;
   font-size: 1.2rem;
   color: #fff;
   background-color: #333;
@@ -490,7 +491,7 @@ header #gnb>li:hover>a {
   height: 10px;
   transform: rotate(135deg) translateX(-50%);
   bottom: 16px;
-  left: 40%;
+  left: 35%;
 }
 
 #abillty .abillty_wrap .abillty_box .inner .img_box:hover .arrow {
@@ -645,9 +646,9 @@ header #gnb>li:hover>a {
   transition: background-position 7s;
 }
 
-.portfolio_group .inner .mobile_box:hover .img_box {
+/* .portfolio_group .inner .mobile_box:hover .img_box {
   background-position: 0 100%;
-}
+} */
 
 .portfolio_group .inner .desktop_box {
   width: 100%;
@@ -660,9 +661,9 @@ header #gnb>li:hover>a {
   top: 2%;
 }
 
-.portfolio_group .inner .desktop_box:hover .img_box {
+/* .portfolio_group .inner .desktop_box:hover .img_box {
   background-position: 0 100%;
-}
+} */
 
 .portfolio_group .inner .desktop_box .frame {
   padding-bottom: 82%;
