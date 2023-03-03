@@ -48,17 +48,6 @@
     #about .left_wrap {
         margin-right: 15rem;
     }
-
-    #about .left_wrap img {
-        width: 270px;
-        height: auto;
-    }
-      
-    #about .left_wrap .text_wrap {
-        width: 270px;
-        height: auto;
-        padding: 0 10%;
-    }
     
     #about .right_wrap .title {
         font-size: 3.4rem;
