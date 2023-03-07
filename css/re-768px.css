@@ -251,8 +251,6 @@
     }
 
     .redesign_group .inner .text_wrap .text_box .title {
-        display: inline-block;
-        width: 8rem;
         font-size: calc(0.51vw + 10.09px);
         font-weight: 500;
     }
