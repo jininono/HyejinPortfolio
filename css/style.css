@@ -511,6 +511,10 @@ header #gnb>li:hover>a {
   padding-bottom: 1.5rem;
 }
 
+#abillty .abillty_wrap .abillty_box .no_2 ul li:first-child {
+  padding-bottom: 0rem;
+}
+
 #abillty .abillty_wrap .inner ul li:last-child {
   padding-bottom: 0;
 }
@@ -518,6 +522,11 @@ header #gnb>li:hover>a {
 #abillty .abillty_wrap .abillty_box .inner ul li span {
   padding-right: 3rem;
   font-weight: 600;
+}
+
+#abillty .abillty_wrap .abillty_box .no_2 ul li span {
+  display: inline-block;
+  width: 16rem;
 }
 
 #abillty .abillty_wrap .abillty_box .inner .txt {

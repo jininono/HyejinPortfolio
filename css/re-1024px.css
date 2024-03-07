@@ -332,6 +332,11 @@
         padding-bottom: 1.5rem;
     }
 
+    #abillty .abillty_wrap .abillty_box .no_2 ul li span {
+        display: inline-block;
+        width:18rem;
+      }
+
     #abillty .abillty_wrap .abillty_box .inner .graph {
         display: inline-block;
         width: 27vw;

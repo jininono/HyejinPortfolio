@@ -110,6 +110,11 @@
         top: 60%;
     }
 
+    #abillty .abillty_wrap .abillty_box .no_2 ul li span {
+        display: inline-block;
+        width: 17rem;
+    }
+
     #abillty .abillty_wrap .abillty_box .inner .text_box.no_3 {
         position: absolute;
         left: 27%;
@@ -331,6 +336,11 @@
             flex-wrap: wrap;
         }
 
+        #abillty .abillty_wrap .abillty_box .no_2 ul li span {
+            display: inline-block;
+            width: 15rem;
+        }
+
         form input[type="text"],
         form input[type="email"],
         form textarea {
@@ -345,3 +355,4 @@
             font-size: calc(0.51vw + 8.09px);
         }
     }
+}
