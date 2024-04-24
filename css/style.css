@@ -89,7 +89,6 @@ a {
   position: absolute;
   top: -6px;
   border-radius: 10px;
-  ;
   opacity: 0;
   transition: all .3s;
 }
@@ -410,6 +409,10 @@ header #gnb>li:hover>a {
   padding: 1.5rem 0;
 }
 
+#about .right_wrap .text_wrap p:nth-of-type(3) {
+  padding-bottom: 1.5rem;
+}
+
 #about .resume_btn {
   display: inline-block;
   font-size: 1.4rem;
@@ -610,6 +613,23 @@ header #gnb>li:hover>a {
   }
 }
 
+/* Project */
+#Project .inner .desktop_box .frame {
+  padding-bottom: 82%;
+  background: url(../img/desktop.png) no-repeat;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-size: 100% 91%;
+}
+
+#Project .inner .desktop_box .img_box {
+  width: 97%;
+  height: 66%;
+  border-radius: 2%;
+  top: 2%;
+}
+
 /*portfolio / redesign_group*/
 .redesign_group {
   width: 100%;
@@ -719,7 +739,6 @@ header #gnb>li:hover>a {
   transform: translateX(-50%);
   background-size: contain;
 }
-
 /*portfolio_group 공통*/
 
 /*redesign_group 공통*/
@@ -836,6 +855,11 @@ header #gnb>li:hover>a {
   right: -10%;
 }
 
+#Project .inner .hover_box {
+  left: -25%;
+  top: 10%;
+}
+
 #portfolio .inner .hover_box {
   left: -25%;
   top: 10%;
@@ -846,33 +870,34 @@ header #gnb>li:hover>a {
   top: 10%;
 }
 
-/*portfolio3 Clone Coding*/
-#portfolio3 {
+/*Clone Coding / Project*/
+.Coding {
   width: 100%;
   height: 100vh;
   padding-top: 10vh;
   text-align: center;
 }
 
-#portfolio3 .text_box {
+.Coding .text_box {
   height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#portfolio3 .text_box .title {
+.Coding .text_box .title {
   font-size: 5rem;
   font-family: 'Caveat', cursive;
   font-weight: 400;
 }
 
-#portfolio3 .text_box .txt {
+.Coding .text_box .txt {
   width: 100%;
   font-size: 1.2rem;
+  padding-top: 1rem;
 }
 
-#portfolio3 .inner {
+.Coding .inner {
   height: 75vh;
   display: flex;
   justify-content: space-between;
@@ -881,22 +906,22 @@ header #gnb>li:hover>a {
   position: relative;
 }
 
-#portfolio3 .inner .content_box .name {
+.Coding .inner .content_box .name {
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-#portfolio3 .inner .content_box .txt {
+.Coding .inner .content_box .txt {
   font-size: 1.2rem;
   margin-bottom: 5rem;
 }
 
-#portfolio3 .inner .content_box .name i {
+.Coding .inner .content_box .name i {
   padding-right: 5px;
 }
 
-#portfolio3 .inner .content_box .mockup_wrap {
+.Coding .inner .content_box .mockup_wrap {
   width: 27vw;
 }
 

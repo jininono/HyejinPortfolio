@@ -1,4 +1,4 @@
-@media all and (max-width: 767px) {
+@media all and (max-width: 767px)  {
 
     :root {
         --vh: 100%;
@@ -155,10 +155,6 @@
         padding-top: 0;
     }
 
-    #about .right_wrap .text_wrap p:nth-of-type(2) {
-        padding: 0;
-    }
-
     #about .right_wrap .resume_btn_wrap.pc {
         display: block;
     }
@@ -216,7 +212,7 @@
 
     .redesign_group .inner .text_wrap {
         padding-bottom: 0;
-        width: 70vw;
+        width: 90vw;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

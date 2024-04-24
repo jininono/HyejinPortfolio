@@ -86,24 +86,30 @@ $(function () {
 
 				if ($(window).scrollTop() > vh(240)) {
 					gnbA.css('background', 'none');
+					bgColor('Project');
+				} else {
+					bgBack('Project');
+				}
+
+				if ($(window).scrollTop() > vh(320)) {
 					bgColor('portfolio');
 				} else {
 					bgBack('portfolio');
 				}
 
-				if ($(window).scrollTop() > vh(320)) {
+				if ($(window).scrollTop() > vh(450)) {
 					bgColor('portfolio2');
 				} else {
 					bgBack('portfolio2');
 				}
 
-				if ($(window).scrollTop() > vh(450)) {
+				if ($(window).scrollTop() > vh(550)) {
 					bgColor('portfolio3');
 				} else {
 					bgBack('portfolio3');
 				}
 
-				if ($(window).scrollTop() > vh(550)) {
+				if ($(window).scrollTop() > vh(650)) {
 					gnbA.css('background', 'none');
 					bgColor('contact');
 				} else {
