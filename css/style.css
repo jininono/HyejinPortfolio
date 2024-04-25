@@ -630,6 +630,11 @@ header #gnb>li:hover>a {
   top: 2%;
 }
 
+#project .inner .desktop_box::after {
+  top: 77%;
+}
+
+
 /*portfolio / redesign_group*/
 .redesign_group {
   width: 100%;
