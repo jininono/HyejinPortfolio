@@ -349,6 +349,10 @@
         max-width: 96vw;
     }
 
+    #Project .inner .hover_box {
+        left: -10%;
+      }
+
     /*portfolio / redesign_group*/
     .redesign_group {
         width: 100%;

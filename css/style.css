@@ -857,7 +857,7 @@ header #gnb>li:hover>a {
 
 #Project .inner .hover_box {
   left: -25%;
-  top: 10%;
+  top: -10%;
 }
 
 #portfolio .inner .hover_box {
