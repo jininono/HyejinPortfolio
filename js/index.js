@@ -86,9 +86,9 @@ $(function () {
 
 				if ($(window).scrollTop() > vh(240)) {
 					gnbA.css('background', 'none');
-					bgColor('Project');
+					bgColor('project');
 				} else {
-					bgBack('Project');
+					bgBack('project');
 				}
 
 				if ($(window).scrollTop() > vh(320)) {

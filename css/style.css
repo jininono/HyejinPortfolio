@@ -613,8 +613,8 @@ header #gnb>li:hover>a {
   }
 }
 
-/* Project */
-#Project .inner .desktop_box .frame {
+/* project */
+#project .inner .desktop_box .frame {
   padding-bottom: 82%;
   background: url(../img/desktop.png) no-repeat;
   width: 100%;
@@ -623,7 +623,7 @@ header #gnb>li:hover>a {
   background-size: 100% 91%;
 }
 
-#Project .inner .desktop_box .img_box {
+#project .inner .desktop_box .img_box {
   width: 97%;
   height: 66%;
   border-radius: 2%;
@@ -855,7 +855,7 @@ header #gnb>li:hover>a {
   right: -10%;
 }
 
-#Project .inner .hover_box {
+#project .inner .hover_box {
   left: -25%;
   top: -10%;
 }
@@ -870,7 +870,7 @@ header #gnb>li:hover>a {
   top: 10%;
 }
 
-/*Clone Coding / Project*/
+/*Clone Coding / project*/
 .Coding {
   width: 100%;
   height: 100vh;

@@ -345,11 +345,11 @@
         border-radius: 40px;
     }
 
-    #Project .inner {
+    #project .inner {
         max-width: 96vw;
     }
 
-    #Project .inner .hover_box {
+    #project .inner .hover_box {
         left: -10%;
       }
 
