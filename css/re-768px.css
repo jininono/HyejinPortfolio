@@ -185,7 +185,7 @@
         width: 100%;
         height: 100vh;
         height: var(--vh);
-        padding-top: 15vh;
+        padding-top: 25vh;
     }
 
     .redesign_group .inner {
@@ -198,6 +198,7 @@
         position: relative;
     }
 
+    #project .inner, 
     #portfolio2 .inner {
         flex-direction: column-reverse;
     }
@@ -314,7 +315,7 @@
     #contact .contact_inner {
         width: 100%;
         height: 130vh;
-        padding-top: 0vh;
+        padding-top: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

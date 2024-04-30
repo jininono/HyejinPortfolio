@@ -349,10 +349,6 @@
         max-width: 96vw;
     }
 
-    #project .inner .hover_box {
-        left: -10%;
-      }
-
     /*portfolio / redesign_group*/
     .redesign_group {
         width: 100%;
@@ -430,10 +426,15 @@
         top: -15%;
     }
 
-    #portfolio2 {
+    #portfolio, 
+    #portfolio3 {
         background: #F5F5F5;
+    }
+
+    #portfolio2 {
         margin-top: 0vh;
     }
+
 
     /*portfolio3 Clone Coding*/
     #portfolio3 {
@@ -500,7 +501,7 @@
     #contact .contact_inner {
         width: 100%;
         height: 100vh;
-        padding-top: 0vh;
+        padding-top: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
